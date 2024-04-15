@@ -3,9 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using Reservation.mvcproject.Models;
 using System.Diagnostics;
 
-namespace Reservation.mvcproject.Controllers
+namespace santsg.project.Controllers
 {
-    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

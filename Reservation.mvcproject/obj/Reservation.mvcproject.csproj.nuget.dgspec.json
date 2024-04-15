@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yesim\\source\\repos\\Reservation.mvcproject\\Reservation.mvcproject\\Reservation.mvcproject.csproj": {}
+    "C:\\Users\\yesim\\source\\repos\\test\\Reservation.mvcproject\\Reservation.mvcproject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yesim\\source\\repos\\Reservation.mvcproject\\Reservation.mvcproject\\Reservation.mvcproject.csproj": {
+    "C:\\Users\\yesim\\source\\repos\\test\\Reservation.mvcproject\\Reservation.mvcproject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yesim\\source\\repos\\Reservation.mvcproject\\Reservation.mvcproject\\Reservation.mvcproject.csproj",
+        "projectUniqueName": "C:\\Users\\yesim\\source\\repos\\test\\Reservation.mvcproject\\Reservation.mvcproject.csproj",
         "projectName": "Reservation.mvcproject",
-        "projectPath": "C:\\Users\\yesim\\source\\repos\\Reservation.mvcproject\\Reservation.mvcproject\\Reservation.mvcproject.csproj",
+        "projectPath": "C:\\Users\\yesim\\source\\repos\\test\\Reservation.mvcproject\\Reservation.mvcproject.csproj",
         "packagesPath": "C:\\Users\\yesim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yesim\\source\\repos\\Reservation.mvcproject\\Reservation.mvcproject\\obj\\",
+        "outputPath": "C:\\Users\\yesim\\source\\repos\\test\\Reservation.mvcproject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yesim\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,6 +58,38 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.4, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Serilog.Formatting.Compact": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Serilog.Sinks.Debug": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "SweetAlert2": {
+              "target": "Package",
+              "version": "[1.0.1, )"
             }
           },
           "imports": [

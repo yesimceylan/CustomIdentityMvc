@@ -155,6 +155,93 @@ namespace Reservation.mvcproject.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("Reservation.mvcproject.Entities.Hotel", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Bathrooms")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Bedrooms")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("City")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("HotelImage")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("HotelImage2")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("HotelImage3")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("HotelImage4")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("HotelName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Location")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PeopleCount")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Price")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("StarRating")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Hotels");
+                });
+
+            modelBuilder.Entity("Reservation.mvcproject.Entities.Res", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("HotelId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("rezCreateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("rezDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("rezDescription")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("rezEmail")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("rezEndDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("rezName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("rezPerson")
+                        .HasColumnType("int");
+
+                    b.Property<string>("rezPhoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("HotelId");
+
+                    b.ToTable("Reservations");
+                });
+
             modelBuilder.Entity("Reservation.mvcproject.Models.AppUser", b =>
                 {
                     b.Property<string>("Id")
@@ -277,6 +364,17 @@ namespace Reservation.mvcproject.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Reservation.mvcproject.Entities.Res", b =>
+                {
+                    b.HasOne("Reservation.mvcproject.Entities.Hotel", "Hotel")
+                        .WithMany()
+                        .HasForeignKey("HotelId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Hotel");
                 });
 #pragma warning restore 612, 618
         }

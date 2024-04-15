@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Reservation.mvcproject.Entities;
 using Reservation.mvcproject.Models;
 
 namespace Reservation.mvcproject.Data
@@ -11,5 +12,8 @@ namespace Reservation.mvcproject.Data
         {
 
         }
+
+        public DbSet<Hotel> Hotels { get; set; }
+        public DbSet<Res> Reservations { get; set; }
     }
 }
