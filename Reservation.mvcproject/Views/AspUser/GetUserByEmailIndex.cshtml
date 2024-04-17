@@ -1,0 +1,49 @@
+﻿@model Reservation.mvcproject.Models.AppUser;
+@{
+    ViewData["Title"] = "GetUserByEmailIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h1>Get User</h1>
+
+<form asp-action="GetUserByEmail" asp-controller="AspUser" method="get">
+
+    <div class="form-group">
+        <label asp-for="UserName">Email</label>
+        <input asp-for="UserName" class="form-control" />
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.UserName)</span>
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Get</button>
+</form>
+@if (TempData["Email"] != null)
+{
+    <style>
+        .info {
+            margin: 0;
+        }
+    </style>
+    <div class="text-center" style="margin-top: 20px;">
+        <div class="alert alert-danger" style="display:flex; flex-direction:column;" role="alert">
+            <p class="info">
+                @TempData["Email"]
+            </p>
+            <p class="info">
+                @TempData["FullName"]
+            </p>
+            <p class="info">
+                @TempData["Adress"]
+            </p>
+            <p class="info">
+                @TempData["PhoneNumber"]
+            </p>
+        </div>
+    </div>
+}
+else if (TempData["GetUserFailed"] != null)
+{
+    <p class="text-center">
+        <div style="margin-top: 20px;" class="alert alert-danger" role="alert">@TempData["GetUserFailed"]</div>
+    </p>
+}

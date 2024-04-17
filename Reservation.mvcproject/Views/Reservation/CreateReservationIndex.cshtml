@@ -1,0 +1,204 @@
+﻿@model Reservation.mvcproject.Entities.Res;
+@{
+    ViewData["Title"] = "CreateReservationIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Reservation Form</h2>
+    <p>Please make sure to fill in the information correctly and completely!</p>
+
+    <div class="container">
+        <form action="CreateReservation">
+            <div class="row">
+                <div class="col-25">
+                    <label for="rezName">Name Surname</label>
+                </div>
+                <div class="col-75">
+                    <input asp-for="rezName" required class="form-control" placeholder="Your name..">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="rezPhoneNumber">Phone Number</label>
+                </div>
+                <div class="col-75">
+                    <input asp-for="rezPhoneNumber" required class="form-control" placeholder="Your phone number..">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="rezEmail">Email</label>
+                </div>
+                <div class="col-75">
+                    <input asp-for="rezEmail" required class="form-control" placeholder="Your mail..">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="rezPerson">Guest Count</label>
+                </div>
+                <div class="col-75">
+                    <select asp-for="rezPerson">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="rezDate">Entry Date</label>
+                </div>
+                <div class="col-75">
+                    <input asp-for="rezDate" required class="form-control" type="date" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="rezEndDate">Release Date</label>
+                </div>
+                <div class="col-75">
+                    <input asp-for="rezEndDate" required class="form-control" type="date" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="rezDescription">Description</label>
+                </div>
+                <div class="col-75">
+                    <textarea asp-for="rezDescription" placeholder="Fill in if there is anything you would like to specify.." style="height:200px"></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-75">
+                    <input asp-for="HotelId" class="form-control" style="display: none;">
+                </div>
+            </div>
+
+            <br>
+            <div class="row">
+                <input type="submit" value="Create" onclick="handleCreateButtonClick()">
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function handleCreateButtonClick() {
+
+            var nameInput = document.getElementById("rezName");
+            var phoneInput = document.getElementById("rezPhoneNumber");
+            var emailInput = document.getElementById("rezEmail");
+            var personInput = document.getElementById("rezPerson");
+            var dateInput = document.getElementById("rezDate");
+            var endDateInput = document.getElementById("rezEndDate");
+
+
+            if (nameInput.value.trim() === "" ||
+                phoneInput.value.trim() === "" ||
+                emailInput.value.trim() === "" ||
+                personInput.value.trim() === "" ||
+                dateInput.value.trim() === "" ||
+                endDateInput.value.trim() === "") {
+                return false;
+            }
+
+            var shouldShowDialog = true;
+
+            if (shouldShowDialog) {
+                alert("Your reservation has been completed successfully!");
+                setTimeout(function () {
+                    window.location.href = 'http://localhost:5092/Home/Index';
+                }, 3000);
+            }
+        }
+    </script>
+
+    <script>
+        var requiredInputs = document.querySelectorAll('input[required]');
+        requiredInputs.forEach(function (input) {
+            input.oninvalid = function (event) {
+                event.target.setCustomValidity('Please fill in this field!');
+            }
+            input.oninput = function (event) {
+                event.target.setCustomValidity('');
+            }
+        });
+    </script>
+
+
+</body>

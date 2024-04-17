@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Reservation.mvcproject.Models;
 using Reservation.mvcproject.ViewModels;
-
 namespace Reservation.mvcproject.Controllers
 {
     public class AccountController : Controller
@@ -69,7 +69,7 @@ namespace Reservation.mvcproject.Controllers
         public async Task<IActionResult> Logout()
         {
             await signInManager.SignOutAsync();
-            return RedirectToAction("Index","Home");
+            return RedirectToAction("Login","Account");
         }
     }
 }

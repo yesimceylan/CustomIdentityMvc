@@ -3,8 +3,8 @@
 
 @{
     ViewData["Title"] = "Login";
+    Layout = "_LoginLayout";
 }
-
 
 <div class="row d-flex align-items-center justify-content-center">
     <div class="col-md-3 card p-3">
@@ -37,9 +37,9 @@
         </form>
     </div>
 </div>
-
-@section Scripts{
+@section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }
+

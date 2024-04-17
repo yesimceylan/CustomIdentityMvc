@@ -1,0 +1,52 @@
+﻿@model Reservation.mvcproject.Entities.Hotel;
+@{
+    ViewData["Title"] = "GetHotelByIdIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Get Hotel</h1>
+
+<form asp-action="GetHotelById" asp-controller="Hotel" method="get">
+
+    <div class="form-group">
+        <label asp-for="Id"></label>
+        <input asp-for="Id" class="form-control" />
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.Id)</span>
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Get</button>
+</form>
+@if (TempData["Hotel"] != null)
+{
+    <style>
+        .info {
+            margin: 0;
+        }
+    </style>
+    <div class="text-center" style="margin-top: 20px;">
+        <div class="alert alert-danger" style="display:flex; flex-direction:column;" role="alert">
+            <p class="info">
+                @TempData["Hotel"]
+            </p>
+            <p class="info">
+                @TempData["City"]
+            </p>
+            <p class="info">
+                @TempData["Location"]
+            </p>
+            <p class="info">
+                @TempData["StarRating"]
+            </p>
+            <p class="info">
+                @TempData["Price"]
+            </p>
+        </div>
+    </div>
+}
+else if (TempData["GetHotelFailed"] != null)
+{
+    <p class="text-center">
+        <div style="margin-top: 20px;" class="alert alert-danger" role="alert">@TempData["GetHotelFailed"]</div>
+    </p>
+}
+

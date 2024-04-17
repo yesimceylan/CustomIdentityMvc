@@ -5,9 +5,11 @@ using Reservation.mvcproject.Models.Request;
 using Reservation.mvcproject.Entities;
 using Serilog;
 using System.Security.Policy;
+using Microsoft.AspNetCore.Authorization;
 
 namespace santsg.project.Controllers
 {
+    [Authorize]
     public class ReservationController : Controller
     {
         private readonly AppDbContext _dbContext;

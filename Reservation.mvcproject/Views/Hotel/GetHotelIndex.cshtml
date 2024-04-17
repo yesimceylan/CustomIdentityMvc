@@ -1,0 +1,34 @@
+﻿@model List<Reservation.mvcproject.Entities.Hotel>
+@{
+    ViewData["Title"] = "GetHotelIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Hotel List</h1>
+<br />
+<br />
+
+@{
+    if (Model != null)
+    {
+        foreach (var hotels in Model)
+        {
+            <ul>
+                <div>
+                <li>
+                    <b>@hotels?.HotelName</b><br />
+                        @hotels?.City / @hotels?.Location
+                </li>
+                </div>
+                <br />
+            </ul>
+
+        }
+    }
+    else
+    {
+        <div>Hotel not found !</div>
+    }
+
+}
+

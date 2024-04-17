@@ -1,0 +1,83 @@
+﻿@model Reservation.mvcproject.Entities.Hotel;
+
+@{
+    ViewData["Title"] = "CreateHotelIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<form asp-action="AddHotel" asp-controller="Hotel" method="post">
+
+    <div class="form-group">
+        <label asp-for="HotelName"></label>
+        <input asp-for="HotelName" class="form-control" />
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.HotelName)</span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="City"></label>
+        <input asp-for="City" class="form-control" />
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.City)</span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Location"></label>
+        <input asp-for="Location" class="form-control" />
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.Location)</span>
+    </div>
+
+    <div class="from-group">
+        <label asp-for="StarRating"></label>
+        <input asp-for="StarRating" class="form-control" />
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.StarRating)</span>
+    </div>
+
+    <div class="from-group">
+        <label asp-for="HotelImage"></label>
+        <input asp-for="HotelImage" class="form-control" />
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.HotelImage)</span>
+    </div>
+
+    <div class="from-group">
+        <label asp-for="HotelImage2"></label>
+        <input asp-for="HotelImage2" class="form-control" />
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.HotelImage2)</span>
+    </div>
+
+    <div class="from-group">
+        <label asp-for="HotelImage3"></label>
+        <input asp-for="HotelImage3" class="form-control" />
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.HotelImage3)</span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="HotelImage4"></label>
+        <input asp-for="HotelImage4" class="form-control" />
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.HotelImage4)</span>
+    </div>
+
+    <div class="from-group">
+        <label asp-for="Price"></label>
+        <input asp-for="Price" class="form-control" />
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.Price)</span>
+    </div>
+
+    <div class="from-group">
+        <label asp-for="PeopleCount"></label>
+        <input asp-for="PeopleCount" class="form-control" />
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.PeopleCount)</span>
+    </div>
+
+    <div class="from-group">
+        <label asp-for="Bathrooms"></label>
+        <input asp-for="Bathrooms" class="form-control" />
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.Bathrooms)</span>
+    </div>
+
+    <div class="from-group">
+        <label asp-for="Bedrooms"></label>
+        <input asp-for="Bedrooms" class="form-control" />
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.Bedrooms)</span>
+    </div>
+
+    <br />
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>

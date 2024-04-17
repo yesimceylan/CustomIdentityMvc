@@ -1,0 +1,28 @@
+﻿@model List<Reservation.mvcproject.Models.AppUser>
+@{
+    ViewData["Title"] = "GetUserIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>User List</h1>
+<br />
+
+@if (Model != null && Model.Count > 0)
+{
+    <ul>
+        @foreach (var user in Model)
+        {
+            <li>
+                <div> @user?.Email</div>
+                <div> @user?.Adress</div>
+            </li>
+            <br />
+            <br />
+        }
+    </ul>
+}
+else
+{
+    <div>User not found!</div>
+}
+

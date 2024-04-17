@@ -1,18 +1,30 @@
-﻿<!DOCTYPE html>
+﻿﻿@using Microsoft.AspNetCore.Identity;
+@inject SignInManager<AppUser> signInManager
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Reservation.mvcproject</title>
+    <title>@ViewData["Title"] - santsg.project</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Reservation.mvcproject.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/santsg.project.styles.css" asp-append-version="true" />
 </head>
 <body>
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1505142468610-359e7d316be0?q=80&w=1852&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+    </style>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Reservation.mvcproject</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><b>TravelNest</b></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -20,15 +32,120 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
+
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link text-black" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+
+                        </li>
+
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+
+                                User Options
+
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                <li>
+
+                                    <a class="dropdown-item" asp-area="" asp-controller="AspUser" asp-action="GetUserIndex">List Users</a>
+
+                                </li>
+
+                                <li>
+
+                                    <a class="dropdown-item" asp-area="" asp-controller="AspUser" asp-action="GetUserByEmailIndex">Get User</a>
+
+                                </li>
+
+                                <li>
+
+                                    <a class="dropdown-item" asp-area="" asp-controller="AspUser" asp-action="UpdateUserIndex">Update User</a>
+
+                                </li>
+
+                                <li>
+
+                                    <a class="dropdown-item" asp-area="" asp-controller="AspUser" asp-action="DeleteUserIndex">Delete User</a>
+
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+
+                                Hotel Options
+
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+
+                                    <a class="dropdown-item" asp-area="" asp-controller="Hotel" asp-action="GetHotelIndex">List Hotels</a>
+
+                                </li>
+
+                                <li>
+
+                                    <a class="dropdown-item" asp-area="" asp-controller="Hotel" asp-action="GetHotelByIdIndex">Get Hotel</a>
+
+                                </li>
+
+
+                                <li>
+
+                                    <a class="dropdown-item" asp-area="" asp-controller="Hotel" asp-action="CreateHotelIndex">Create Hotel</a>
+
+                                </li>
+
+                                <li>
+
+                                    <a class="dropdown-item" asp-area="" asp-controller="Hotel" asp-action="UpdateHotelIndex">Update Hotel</a>
+
+                                </li>
+
+                                <li>
+
+                                    <a class="dropdown-item" asp-area="" asp-controller="Hotel" asp-action="DeleteHotelIndex">Delete Hotel</a>
+
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+
+                            <a class="nav-link text-black" asp-area="" asp-controller="Hotel" asp-action="SearchHotelIndex">Search Hotel</a>
+
                         </li>
+
                     </ul>
-                    <partial name="_LoginPartial" />
+                    <ul class="navbar-nav">
+                        @if (signInManager.IsSignedIn(User))
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    @User.Identity!.Name!
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <a class="dropdown-item" asp-action="Logout" asp-controller="Account">
+                                            Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        }
+                    </ul>
                 </div>
-            </div>
         </nav>
     </header>
     <div class="container">
@@ -37,14 +154,36 @@
         </main>
     </div>
 
+    <style>
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 10px 0;
+            text-align: left;
+        }
+    </style>
+
+    <style>
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 10px 0;
+            text-align: left;
+        }
+    </style>
+
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2024 - Reservation.mvcproject - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2024 - santsg.project - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
 </body>
 </html>

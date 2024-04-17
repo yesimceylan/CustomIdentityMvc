@@ -5,6 +5,14 @@
 @{
     ViewData["Title"] = "Register";
 }
+<style>
+    body {
+        background-image: url('https://images.unsplash.com/photo-1566486106118-e1c24ad08802?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+</style>
 
 
 <div class="row d-flex align-items-center justify-content-center">
@@ -13,7 +21,7 @@
         <form asp-action="Register" method="post" asp-route-returnurl="@ViewData["ReturnUrl"]">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="mb-1">
-                <label asp-for="Name" class="control-label"></label>
+                <label asp-for="Name" class="control-label">Name Surname</label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
@@ -21,6 +29,11 @@
                 <label asp-for="Email" class="control-label"></label>
                 <input asp-for="Email" class="form-control" />
                 <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="mb-1">
+                <label asp-for="PhoneNumber" class="control-label"></label>
+                <input asp-for="PhoneNumber" class="form-control" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
             </div>
             <div class="mb-1">
                 <label asp-for="Password" class="control-label"></label>

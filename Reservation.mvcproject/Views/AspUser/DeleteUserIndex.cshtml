@@ -1,0 +1,15 @@
+﻿@model Reservation.mvcproject.Models.AppUser;
+@{
+    ViewData["Title"] = "DeleteUserIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form asp-action="DeleteUser" asp-controller="AspUser" method="post">
+    <div class="form-group">
+        <label asp-for="UserName">Email</label>
+        <input asp-for="UserName" class="form-control" />
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.UserName)</span>
+    </div><br />
+    <button type="submit" class="btn btn-primary">Delete</button>
+</form>
+

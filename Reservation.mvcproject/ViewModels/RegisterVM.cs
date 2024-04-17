@@ -14,10 +14,12 @@ namespace Reservation.mvcproject.ViewModels
         public string? Password { get; set; }
         [Compare("Password", ErrorMessage = "Password don't match.")]
         [Display(Name = "Confirm Password")]
+        [DataType(DataType.Password)]
         public string? ConfirmPassword { get; set; }
 
         //multiline adress icin bir kac satır ayırır
         [DataType(DataType.MultilineText)]
         public string? Adress { get; set; }
+        public string? PhoneNumber { get; set; }
     }
 }

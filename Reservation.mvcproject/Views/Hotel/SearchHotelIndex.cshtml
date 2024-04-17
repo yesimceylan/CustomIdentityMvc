@@ -1,0 +1,31 @@
+﻿@using Reservation.mvcproject.Entities
+@model Reservation.mvcproject.Entities.Hotel
+
+@{
+    ViewData["Title"] = "SearchHotelIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form asp-action="SearchHotel" asp-controller="Hotel" method="post">
+    <div class="form-group">
+        <label asp-for="City"></label>
+        <input asp-for="City" class="form-control" />
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.City)</span>
+    </div><br />
+
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>
+
+<style>
+    .alert {
+        width: 500px;
+        height: 70px;
+        font-size: 16px;
+    }
+</style>
+@if (TempData["ReservationFailed"] != null)
+{
+    <div class="text-center" style="margin-top: 20px;">
+        <div class="alert alert-danger" role="alert">@TempData["ReservationFailed"]</div>
+    </div>
+}
