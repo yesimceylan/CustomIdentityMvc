@@ -1,1 +1,7 @@
 2024-04-17 15:45:50.643 +03:00 [INF] Celal Kılınc kullanıcı silindi.
+2024-04-17 16:35:48.746 +03:00 [INF] Hotels listed.
+2024-04-17 16:37:17.160 +03:00 [INF] Celal Kılınc kullanıcı silindi.
+2024-04-17 16:39:05.453 +03:00 [INF] Hotels listed.
+2024-04-17 16:39:51.894 +03:00 [INF] Hotels listed.
+2024-04-17 16:40:02.794 +03:00 [INF] User with maill adress celalklnc@gmail.com is listed.
+2024-04-17 16:40:10.703 +03:00 [INF] Hotels listed.

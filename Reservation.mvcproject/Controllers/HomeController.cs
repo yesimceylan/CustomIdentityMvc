@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Reservation.mvcproject.Models;
 using System.Diagnostics;
 
-namespace santsg.project.Controllers
+namespace Reservation.mvcproject.Controllers
 {
     [Authorize]
     public class HomeController : Controller

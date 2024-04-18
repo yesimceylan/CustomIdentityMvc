@@ -1,19 +1,23 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
 using Reservation.mvcproject.Models;
 using Reservation.mvcproject.ViewModels;
+using Reservation.mvcproject.Interfaceses;
 namespace Reservation.mvcproject.Controllers
 {
     public class AccountController : Controller
     {
         private readonly SignInManager<AppUser> signInManager;
         private readonly UserManager<AppUser> userManager;
+        private readonly IMailService _mailService;
 
-        public AccountController(SignInManager<AppUser> signInManager, UserManager<AppUser> userManager)
+        public AccountController(SignInManager<AppUser> signInManager, UserManager<AppUser> userManager, IMailService mailService)
         {
             this.signInManager = signInManager;
             this.userManager = userManager;
+            this._mailService = mailService;
         }
         public IActionResult Login()
         {
@@ -22,6 +26,7 @@ namespace Reservation.mvcproject.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginVM model)
         {
+            
             if (ModelState.IsValid)
             {
                 //login
@@ -56,6 +61,11 @@ namespace Reservation.mvcproject.Controllers
                 if (result.Succeeded)
                 {
                     await signInManager.SignInAsync(user, false);
+                    string? toMail = user.Email;
+                    string subject = "Information!";
+                    string body = "Your registration has been successfully created.";
+
+                    await _mailService.SendEmailAsync(toMail, subject, body);
 
                     return RedirectToAction("Index","Home");
                 }
@@ -66,6 +76,8 @@ namespace Reservation.mvcproject.Controllers
             }
             return View(model);
         }
+
+      
         public async Task<IActionResult> Logout()
         {
             await signInManager.SignOutAsync();

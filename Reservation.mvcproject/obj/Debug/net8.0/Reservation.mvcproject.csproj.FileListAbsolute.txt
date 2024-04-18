@@ -409,9 +409,6 @@ C:\Users\yesim\source\repos\test\Reservation.mvcproject\obj\Debug\net8.0\refint\
 C:\Users\yesim\source\repos\test\Reservation.mvcproject\obj\Debug\net8.0\Reservation.mvcproject.pdb
 C:\Users\yesim\source\repos\test\Reservation.mvcproject\obj\Debug\net8.0\Reservation.mvcproject.genruntimeconfig.cache
 C:\Users\yesim\source\repos\test\Reservation.mvcproject\obj\Debug\net8.0\ref\Reservation.mvcproject.dll
-C:\Users\yesim\source\repos\test\Reservation.mvcproject\bin\Debug\net8.0\Google.Apis.dll
-C:\Users\yesim\source\repos\test\Reservation.mvcproject\bin\Debug\net8.0\Google.Apis.Admin.Directory.directory_v1.dll
-C:\Users\yesim\source\repos\test\Reservation.mvcproject\bin\Debug\net8.0\Google.Apis.Auth.dll
-C:\Users\yesim\source\repos\test\Reservation.mvcproject\bin\Debug\net8.0\Google.Apis.Core.dll
-C:\Users\yesim\source\repos\test\Reservation.mvcproject\bin\Debug\net8.0\System.Management.dll
-C:\Users\yesim\source\repos\test\Reservation.mvcproject\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\yesim\source\repos\test\Reservation.mvcproject\bin\Debug\net8.0\EntityFramework.SqlServer.dll
+C:\Users\yesim\source\repos\test\Reservation.mvcproject\bin\Debug\net8.0\EntityFramework.dll
+C:\Users\yesim\source\repos\test\Reservation.mvcproject\bin\Debug\net8.0\System.Web.Providers.dll

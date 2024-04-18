@@ -9,7 +9,7 @@ using Reservation.mvcproject.Models.Request;
 using Serilog;
 
 
-namespace santsg.project.Controllers;
+namespace Reservation.mvcproject.Controllers;
 [Authorize]
 public class HotelController : Controller
 {

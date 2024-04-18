@@ -7,7 +7,7 @@ using Serilog;
 using System.Security.Policy;
 using Microsoft.AspNetCore.Authorization;
 
-namespace santsg.project.Controllers
+namespace Reservation.mvcproject.Controllers
 {
     [Authorize]
     public class ReservationController : Controller

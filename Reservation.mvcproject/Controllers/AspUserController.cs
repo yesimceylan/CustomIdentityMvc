@@ -1,11 +1,11 @@
-﻿using Google.Apis.Admin.Directory.directory_v1.Data;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
 using Reservation.mvcproject.Data;
 using Reservation.mvcproject.Models.Request;
 using Reservation.mvcproject.ViewModels;
 using Serilog;
+using System.Web.Providers.Entities;
 
 namespace Reservation.mvcproject.Controllers
 {
@@ -67,6 +67,26 @@ namespace Reservation.mvcproject.Controllers
             TempData["Adress"] = ($"PhoneNumber: {user.Adress} ");
             return View("GetUserByEmailIndex");
         }
+        //[HttpPost]
+        //public async Task<IActionResult> UpdateUser(UpdateUserRequestModel user)
+        //{
+        //    var updatedUser = await _dbContext.Users.FirstOrDefaultAsync(u => u.Email == user.Email);
+        //    if (updatedUser == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    updatedUser.Name = user?.Name;
+        //    updatedUser.UserName= user?.Email;
+        //    updatedUser.Email = user?.Email;
+        //    updatedUser.PhoneNumber= user?.PhoneNumber;
+        //    updatedUser.Adress = user?.Adress;
+
+        //    _dbContext.Update<User>(updatedUser);
+        //    await _dbContext.SaveChangesAsync();
+
+        //    Log.Information($"{updatedUser} user updated.");
+        //    return RedirectToAction("Index", "Home");
+        //}
     }
 }
 

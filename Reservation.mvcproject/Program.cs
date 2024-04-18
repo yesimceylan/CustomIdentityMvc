@@ -2,7 +2,9 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Reservation.mvcproject.Data;
+using Reservation.mvcproject.Interfaceses;
 using Reservation.mvcproject.Models;
+using Reservation.mvcproject.Services;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +17,7 @@ Log.Logger = new LoggerConfiguration()
     .CreateLogger();
 
 builder.Services.AddControllersWithViews();
+builder.Services.AddSingleton<IMailService, MailService>();
 builder.Services.AddDbContext<AppDbContext>(
     Options => Options.UseSqlServer(connectionString)
     );

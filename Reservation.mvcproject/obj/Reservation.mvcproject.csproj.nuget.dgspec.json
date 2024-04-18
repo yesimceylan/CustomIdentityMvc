@@ -45,9 +45,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Google.Apis.Admin.Directory.directory_v1": {
+            "Microsoft.AspNet.Providers.Core": {
               "target": "Package",
-              "version": "[1.67.0.3379, )"
+              "version": "[2.0.0, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
