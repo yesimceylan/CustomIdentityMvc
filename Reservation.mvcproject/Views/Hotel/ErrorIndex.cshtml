@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewData["Title"] = "ErrorIndex";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            background-image: url('https://www.batidandogus.com/wp-content/uploads/2019/04/gri-arkaplan-1920.jpg');
+        }
+
+        .error-container {
+            text-align: center;
+        }
+
+        h1 {
+            color: midnightblue;
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #757575;
+            font-size: 2em;
+            margin-bottom: 40px;
+        }
+
+        .home-btn {
+            background-color: #FF5722;
+            color: #fff;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+            .home-btn:hover {
+                background-color: #FF7043;
+            }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1>Error !</h1>
+        <p>Oops! Something went wrong.</p>
+        <button onclick="window.location.href='@Url.Action("Index", "Home")'" class="btn btn-primary">Go to Home</button><br />
+
+    </div>
+</body>
+</html>
+

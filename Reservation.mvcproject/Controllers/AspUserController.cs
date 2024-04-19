@@ -52,7 +52,7 @@ namespace Reservation.mvcproject.Controllers
                 await _dbContext.SaveChangesAsync();
 
                 Log.Information($"{userToDelete.Name} kullanıcı silindi.");
-                return RedirectToAction("Login", "Account");
+                return RedirectToAction("GetUserIndex", "AspUser");
             }
         }
 

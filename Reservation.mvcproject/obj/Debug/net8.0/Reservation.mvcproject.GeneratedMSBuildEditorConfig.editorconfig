@@ -66,6 +66,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG90ZWxcRGVsZXRlSG90ZWxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/yesim/source/repos/test/Reservation.mvcproject/Views/Hotel/ErrorIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG90ZWxcRXJyb3JJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/yesim/source/repos/test/Reservation.mvcproject/Views/Hotel/GetHotelByIdIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG90ZWxcR2V0SG90ZWxCeUlkSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

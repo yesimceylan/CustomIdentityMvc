@@ -66,3 +66,24 @@
 2024-04-19 14:08:08.490 +03:00 [INF] yesimceylan7@icloud.com user updated.
 2024-04-19 14:21:01.498 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
 2024-04-19 14:21:22.558 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-04-19 14:58:21.231 +03:00 [INF] Hotels listed.
+2024-04-19 15:24:21.973 +03:00 [INF] Hotels listed.
+2024-04-19 15:24:34.109 +03:00 [INF] Hotels listed.
+2024-04-19 15:24:56.475 +03:00 [INF] HotelId: aece7a04-8950-468e-c328-08dc5d45816e to be viewed.
+2024-04-19 15:27:05.648 +03:00 [INF] 9be78b25-fe6e-4f9f-d6ac-08dc606c060b new reservation registration.
+2024-04-19 16:36:34.804 +03:00 [INF] HotelName: Akra hotel, HotelId: 332f6ec7-8b9b-4cf6-75f1-08dc6075bb25 added
+2024-04-19 16:45:48.292 +03:00 [INF] Yeşim Ceylan kullanıcı silindi.
+2024-04-19 16:56:33.985 +03:00 [INF] Hotels listed.
+2024-04-19 17:26:24.965 +03:00 [INF] Ferhan Abacı kullanıcı silindi.
+2024-04-19 17:26:25.067 +03:00 [INF] Hotels listed.
+2024-04-19 17:35:31.578 +03:00 [INF] Hotels listed.
+2024-04-19 17:37:12.847 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-04-19 17:38:10.724 +03:00 [INF] yesimceylan7@icloud.com user updated.
+2024-04-19 17:39:29.706 +03:00 [INF] Mustafa Batı kullanıcı silindi.
+2024-04-19 17:39:29.728 +03:00 [INF] Hotels listed.
+2024-04-19 17:39:50.164 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-04-19 17:39:56.780 +03:00 [INF] User with mail address dsjhgjhdshfjksh not found.
+2024-04-19 17:40:15.984 +03:00 [INF] Hotels listed.
+2024-04-19 17:44:34.924 +03:00 [INF] 345ccb0d-4c68-4d1b-cf30-08dc607f3b17 new reservation registration.
+2024-04-19 17:47:18.176 +03:00 [INF] Hotels listed.
+2024-04-19 17:54:32.578 +03:00 [INF] Hotels listed.

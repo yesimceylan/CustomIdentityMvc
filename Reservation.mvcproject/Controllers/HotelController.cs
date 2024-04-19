@@ -1,5 +1,6 @@
 ﻿ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.Elfie.Serialization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
@@ -7,6 +8,13 @@ using Reservation.mvcproject.Data;
 using Reservation.mvcproject.Entities;
 using Reservation.mvcproject.Models.Request;
 using Serilog;
+using static System.Net.Mime.MediaTypeNames;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.ComponentModel;
+using System.Drawing.Printing;
+using System.Drawing;
+using System.Reflection;
+using System.Runtime.InteropServices;
 
 
 namespace Reservation.mvcproject.Controllers;
@@ -61,6 +69,11 @@ public class HotelController : Controller
         var hotel = _dbContext.Hotels.FirstOrDefault(x => x.Id == id);
         return View(hotel);
     }
+    public IActionResult ErrorIndex()
+    {
+        return View();
+    }
+
 
     [HttpGet]
     public async Task<IActionResult> GetHotelById(Guid id)
@@ -68,8 +81,8 @@ public class HotelController : Controller
         var hotel = await _dbContext.Hotels.FindAsync(id);
         if (hotel == null)
         {
-            TempData["GetHotelFailed"] = "No hotel with this id was found!";
-            return View("GetHotelByIdIndex");
+            //TempData["GetHotelFailed"] = "No hotel with this id was found!";
+            return View("ErrorIndex","Hotel");
         }
         Log.Information($"HotelId: {id} to be viewed.");
         TempData["Hotel"] = ($"Name: {hotel.HotelName} ");
@@ -120,35 +133,6 @@ public class HotelController : Controller
         return RedirectToAction("Index", "Home");
     }
 
-    //[HttpPost]
-    //public async Task<IActionResult> UpdateHotel(UpdateHotelRequest hotel)
-    //{
-    //    var updatedHotel = await _dbContext.Hotels.FindAsync(hotel?.Id);
-    //    if (updatedHotel == null)
-    //    {
-    //        return NotFound();
-    //    }
-
-
-    //    updatedHotel.HotelName = hotel?.HotelName;
-    //    updatedHotel.City = hotel?.City;
-    //    updatedHotel.Location = hotel?.Location;
-    //    updatedHotel.StarRating = hotel?.StarRating;
-    //    updatedHotel.HotelImage = hotel?.HotelImage;
-    //    updatedHotel.HotelImage2 = hotel?.HotelImage2;
-    //    updatedHotel.HotelImage3 = hotel?.HotelImage3;
-    //    updatedHotel.HotelImage4 = hotel?.HotelImage4;
-    //    updatedHotel.Price = hotel?.Price;
-    //    updatedHotel.PeopleCount = hotel?.PeopleCount;
-    //    updatedHotel.Bathrooms = hotel?.Bathrooms;
-    //    updatedHotel.Bedrooms = hotel?.Bedrooms;
-
-    //    _dbContext.Update<Hotel>(updatedHotel);
-    //    await _dbContext.SaveChangesAsync();
-
-    //    Log.Information($"{updatedHotel} user updated.");
-    //    return RedirectToAction("Index", "Home");
-    //}
     [HttpPost]
     public async Task<IActionResult> UpdateHotel(UpdateHotelRequest hotel)
     {
@@ -243,4 +227,8 @@ public class HotelController : Controller
         }
     }
 
+    public async Task<IActionResult> Error()
+    {
+        return View();
+    }
 }
