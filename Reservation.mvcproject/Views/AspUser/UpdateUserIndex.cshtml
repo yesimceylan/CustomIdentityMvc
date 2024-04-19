@@ -1,0 +1,39 @@
+﻿@model Reservation.mvcproject.Models.AppUser
+@{
+    ViewData["Title"] = "UpdateUserIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h1>Update User</h1>
+
+<form asp-action="UpdateUser" asp-controller="AspUser" method="post">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.Name)</span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <input asp-for="Email"  required class="form-control" />
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.Email)</span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PhoneNumber"></label>
+        <input asp-for="PhoneNumber" class="form-control" />
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.PhoneNumber)</span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Adress"></label>
+        <input asp-for="Adress" class="form-control" />
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.Adress)</span>
+    </div>
+
+    <br />
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>
+
+

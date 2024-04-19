@@ -1,0 +1,66 @@
+2024-04-19 10:19:25.447 +03:00 [INF] Hotels listed.
+2024-04-19 10:19:50.009 +03:00 [INF] Yeşim Ceylan kullanıcı silindi.
+2024-04-19 10:19:55.874 +03:00 [INF] Celal Kılınc kullanıcı silindi.
+2024-04-19 10:24:44.379 +03:00 [INF] Hotels listed.
+2024-04-19 10:29:21.566 +03:00 [INF] Hotels listed.
+2024-04-19 10:33:23.116 +03:00 [INF] HotelName: Diamond Premium Hotel & Spa, HotelId: 6cab0e18-b0d5-4cb8-bd28-08dc6042fe55 added
+2024-04-19 10:39:27.630 +03:00 [INF] HotelName: Papirus Hotel , HotelId: fab70f69-cc74-4357-bd29-08dc6042fe55 added
+2024-04-19 10:44:09.334 +03:00 [INF] HotelName: Double Tree by Hilton, HotelId: 68650240-9cb0-4a8b-bd2a-08dc6042fe55 added
+2024-04-19 10:47:40.394 +03:00 [INF] HotelName: Susesi Luxury Resort, HotelId: fe66e599-dfc2-4b8c-bd2b-08dc6042fe55 added
+2024-04-19 11:03:40.121 +03:00 [INF] HotelName: Hotel Su & Aqualand, HotelId: e0a07d90-4da7-4fcb-bd2c-08dc6042fe55 added
+2024-04-19 11:04:32.188 +03:00 [INF] Hotel Name: Hotel Su & Aqualand id:e0a07d90-4da7-4fcb-bd2c-08dc6042fe55 is deleted.
+2024-04-19 11:07:23.933 +03:00 [INF] HotelName: Hotel Su & Aqualand, HotelId: c60622d9-d883-4ae6-bd2d-08dc6042fe55 added
+2024-04-19 11:09:36.425 +03:00 [INF] HotelName: Sarp Otel Kadriye, HotelId: d3c57c20-f5f9-4a7b-bd2e-08dc6042fe55 added
+2024-04-19 11:12:01.716 +03:00 [INF] HotelName: Puding Marina Hotel, HotelId: fa06945a-3d76-4753-bd2f-08dc6042fe55 added
+2024-04-19 11:14:22.045 +03:00 [INF] HotelName: Castle Old Town, HotelId: d10043e8-149e-4bab-bd30-08dc6042fe55 added
+2024-04-19 11:16:57.458 +03:00 [INF] HotelName: Noa's Boutique Hotel, HotelId: fb5b1fb2-308f-4105-bd31-08dc6042fe55 added
+2024-04-19 11:20:22.792 +03:00 [INF] HotelName: Saint Star Kemer Adult Only, HotelId: 7f258a96-bc36-4f00-bd32-08dc6042fe55 added
+2024-04-19 11:22:50.302 +03:00 [INF] HotelName: Collesium Garden , HotelId: c1d3c47b-6ddd-4171-bd33-08dc6042fe55 added
+2024-04-19 11:24:37.127 +03:00 [INF] HotelName: Perlo Hotel, HotelId: 17a9dc2c-4dbf-4c98-bd34-08dc6042fe55 added
+2024-04-19 11:27:34.727 +03:00 [INF] HotelName: Old House Pub&Boutique Hotels , HotelId: e435997c-df5d-4e03-bd35-08dc6042fe55 added
+2024-04-19 11:29:29.162 +03:00 [INF] HotelName: Aletris Deluxe Hotel Spa , HotelId: d3ccce97-e4ce-4e48-bd36-08dc6042fe55 added
+2024-04-19 11:29:43.713 +03:00 [INF] HotelName: Aletris Deluxe Hotel Spa , HotelId: 50baf824-d43f-4365-bd37-08dc6042fe55 added
+2024-04-19 11:30:57.301 +03:00 [INF] Hotel Name: Aletris Deluxe Hotel Spa  id:d3ccce97-e4ce-4e48-bd36-08dc6042fe55 is deleted.
+2024-04-19 11:33:11.757 +03:00 [INF] HotelName: Oji Hotel , HotelId: f29be06e-4051-4a49-bd38-08dc6042fe55 added
+2024-04-19 11:33:19.523 +03:00 [INF] HotelName: Oji Hotel , HotelId: 643e4fc5-ff28-4df4-bd39-08dc6042fe55 added
+2024-04-19 11:34:13.003 +03:00 [INF] Hotel Name: Oji Hotel  id:f29be06e-4051-4a49-bd38-08dc6042fe55 is deleted.
+2024-04-19 11:44:56.044 +03:00 [INF] HotelName: Feniks Boutique Hotel, HotelId: 4968ce74-32ef-4e0b-bd3a-08dc6042fe55 added
+2024-04-19 11:46:39.683 +03:00 [INF] HotelName: Naturella Hotel & Apart , HotelId: 10d8e86a-ed3f-4628-bd3b-08dc6042fe55 added
+2024-04-19 13:51:09.476 +03:00 [INF] yesimceylan7@icloud.com user updated.
+2024-04-19 13:51:52.910 +03:00 [INF] Hotels listed.
+2024-04-19 13:51:58.059 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-04-19 13:54:49.496 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-04-19 13:54:51.868 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-04-19 13:54:53.174 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-04-19 13:55:23.585 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-04-19 13:55:25.569 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-04-19 13:55:26.912 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-04-19 13:55:46.810 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-04-19 13:55:48.332 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-04-19 13:56:34.243 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-04-19 13:56:35.932 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-04-19 13:56:36.768 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-04-19 13:56:48.960 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-04-19 13:56:49.579 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-04-19 13:57:25.836 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-04-19 13:57:27.697 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-04-19 13:58:24.458 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-04-19 14:01:39.727 +03:00 [INF] Yeşim Ceylan kullanıcı silindi.
+2024-04-19 14:02:26.002 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-04-19 14:02:30.874 +03:00 [INF] Hotels listed.
+2024-04-19 14:02:42.486 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-04-19 14:03:26.087 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-04-19 14:03:36.247 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-04-19 14:03:43.382 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-04-19 14:03:52.173 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-04-19 14:03:58.548 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-04-19 14:04:08.796 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-04-19 14:04:29.620 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-04-19 14:05:04.198 +03:00 [INF] mustafa.bati9@gmail.com user updated.
+2024-04-19 14:05:22.343 +03:00 [INF] celalklnc@gmail.com user updated.
+2024-04-19 14:05:37.621 +03:00 [INF] aleynaergul7@gmail.com user updated.
+2024-04-19 14:05:50.881 +03:00 [INF] ferhan.abaci@santsg.com user updated.
+2024-04-19 14:05:59.436 +03:00 [INF] yigitceylan2005@gmail.com user updated.
+2024-04-19 14:06:11.356 +03:00 [INF] soykansaydam1@gmail.com user updated.
+2024-04-19 14:06:33.295 +03:00 [INF] soykansaydam1@gmail.com user updated.
+2024-04-19 14:08:08.490 +03:00 [INF] yesimceylan7@icloud.com user updated.

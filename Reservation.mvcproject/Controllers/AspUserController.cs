@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
 using Reservation.mvcproject.Data;
@@ -9,6 +10,7 @@ using System.Web.Providers.Entities;
 
 namespace Reservation.mvcproject.Controllers
 {
+    [Authorize]
     public class AspUserController : Controller
     {
         private readonly AppDbContext _dbContext;
@@ -31,6 +33,10 @@ namespace Reservation.mvcproject.Controllers
         {
             return View();
         }
+        public IActionResult UpdateUserIndex()
+        {
+            return View();
+        }
         [HttpPost]
         public async Task<IActionResult> DeleteUser(string UserName)
         {
@@ -46,7 +52,7 @@ namespace Reservation.mvcproject.Controllers
                 await _dbContext.SaveChangesAsync();
 
                 Log.Information($"{userToDelete.Name} kullanıcı silindi.");
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Login", "Account");
             }
         }
 
@@ -61,32 +67,49 @@ namespace Reservation.mvcproject.Controllers
                 return View("GetUserByEmailIndex");
             }
             Log.Information($"User with maill adress {UserName} is listed.");
-            TempData["FullName"] = ($"Name: {user.Name} ");
+            TempData["FullName"] = ($"Username: {user.Name} ");
             TempData["Email"] = ($"Name: {user.UserName} ");
-            TempData["PhoneNumber"] = ($"Email: {user.PhoneNumber}");
-            TempData["Adress"] = ($"PhoneNumber: {user.Adress} ");
+            TempData["PhoneNumber"] = ($"Phone Number: {user.PhoneNumber}");
+            TempData["Adress"] = ($"Address: {user.Adress} ");
             return View("GetUserByEmailIndex");
         }
-        //[HttpPost]
-        //public async Task<IActionResult> UpdateUser(UpdateUserRequestModel user)
-        //{
-        //    var updatedUser = await _dbContext.Users.FirstOrDefaultAsync(u => u.Email == user.Email);
-        //    if (updatedUser == null)
-        //    {
-        //        return NotFound();
-        //    }
-        //    updatedUser.Name = user?.Name;
-        //    updatedUser.UserName= user?.Email;
-        //    updatedUser.Email = user?.Email;
-        //    updatedUser.PhoneNumber= user?.PhoneNumber;
-        //    updatedUser.Adress = user?.Adress;
+        [HttpPost]
+        public async Task<IActionResult> UpdateUser(UpdateUserRequestModel user)
+        {
+            var updatedUser = await _dbContext.Users.FirstOrDefaultAsync(u => u.Email == user.Email);
+            if (updatedUser == null)
+            {
+                return NotFound();
+            }
 
-        //    _dbContext.Update<User>(updatedUser);
-        //    await _dbContext.SaveChangesAsync();
+            if (!string.IsNullOrEmpty(user.Name))
+            {
+                updatedUser.Name = user.Name;
+            }
 
-        //    Log.Information($"{updatedUser} user updated.");
-        //    return RedirectToAction("Index", "Home");
-        //}
+            if (!string.IsNullOrEmpty(user.Email))
+            {
+                updatedUser.Email = user.Email;
+                updatedUser.UserName = user.Email; 
+            }
+
+            if (!string.IsNullOrEmpty(user.PhoneNumber))
+            {
+                updatedUser.PhoneNumber = user.PhoneNumber;
+            }
+
+            if (!string.IsNullOrEmpty(user.Adress))
+            {
+                updatedUser.Adress = user.Adress;
+            }
+
+            _dbContext.Users.Update(updatedUser);
+            await _dbContext.SaveChangesAsync();
+
+            Log.Information($"{updatedUser} user updated.");
+            return RedirectToAction("Index", "Home");
+        }
+
     }
 }
 

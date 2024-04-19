@@ -1,0 +1,29 @@
+2024-04-18 13:52:44.183 +03:00 [INF] Hotels listed.
+2024-04-18 13:52:51.998 +03:00 [INF] Hotels listed.
+2024-04-18 13:53:02.469 +03:00 [INF] Hotels listed.
+2024-04-18 13:59:02.644 +03:00 [INF] Hotels listed.
+2024-04-18 14:33:35.252 +03:00 [INF] Hotels listed.
+2024-04-18 14:33:40.908 +03:00 [INF] User with maill adress celalklnc@gmail.com is listed.
+2024-04-18 14:34:16.029 +03:00 [INF] Celal Kılınc kullanıcı silindi.
+2024-04-18 14:47:03.096 +03:00 [INF] yesimceylan7@icloud.com user updated.
+2024-04-18 15:12:37.833 +03:00 [INF] yesimceylan7@icloud.com user updated.
+2024-04-18 15:12:57.300 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-04-18 15:13:11.757 +03:00 [INF] yesimceylan7@icloud.com user updated.
+2024-04-18 15:13:13.528 +03:00 [INF] Hotels listed.
+2024-04-18 15:13:33.857 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-04-18 15:13:42.608 +03:00 [INF] Hotels listed.
+2024-04-18 15:13:50.568 +03:00 [INF] Yeşim Ceylan kullanıcı silindi.
+2024-04-18 15:14:33.405 +03:00 [INF] Hotels listed.
+2024-04-18 15:15:04.078 +03:00 [INF] HotelId: f58db130-1648-436f-c326-08dc5d45816e to be viewed.
+2024-04-18 15:15:52.771 +03:00 [INF] Hotel Name: RuinAdalia Hotel id:628b5365-5d8a-4652-c32f-08dc5d45816e is deleted.
+2024-04-18 15:17:11.492 +03:00 [INF] HotelName: RuinAdalia Hotel, HotelId: f84bc5bb-9784-4736-0276-08dc5fa179a0 added
+2024-04-18 15:17:42.828 +03:00 [INF] User with mail address dgdgdsg not found.
+2024-04-18 15:17:45.128 +03:00 [INF] Hotels listed.
+2024-04-18 15:19:17.937 +03:00 [INF] 61148305-13fd-42d6-1dec-08dc5fa1c4f7 new reservation registration.
+2024-04-18 17:11:01.318 +03:00 [INF] User with mail address celalklnc@gmail.com not found.
+2024-04-18 17:12:00.864 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-04-18 18:04:14.345 +03:00 [INF] Hotels listed.
+2024-04-18 18:04:29.728 +03:00 [INF] User with maill adress celalklnc@gmail.com is listed.
+2024-04-18 18:05:18.471 +03:00 [INF] Yeşim Ceylan kullanıcı silindi.
+2024-04-18 18:05:26.230 +03:00 [INF] Hotels listed.
+2024-04-18 18:10:27.493 +03:00 [INF] 0d522bac-e6ff-44ba-62f5-08dc5fb9ae18 new reservation registration.
