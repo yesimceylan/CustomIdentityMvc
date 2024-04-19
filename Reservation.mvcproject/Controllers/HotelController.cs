@@ -80,6 +80,7 @@ public class HotelController : Controller
         return View("GetHotelByIdIndex");
     }
 
+
     [HttpPost]
     public async Task<IActionResult> AddHotel(AddHotelRequest hotel)
     {
@@ -119,6 +120,35 @@ public class HotelController : Controller
         return RedirectToAction("Index", "Home");
     }
 
+    //[HttpPost]
+    //public async Task<IActionResult> UpdateHotel(UpdateHotelRequest hotel)
+    //{
+    //    var updatedHotel = await _dbContext.Hotels.FindAsync(hotel?.Id);
+    //    if (updatedHotel == null)
+    //    {
+    //        return NotFound();
+    //    }
+
+
+    //    updatedHotel.HotelName = hotel?.HotelName;
+    //    updatedHotel.City = hotel?.City;
+    //    updatedHotel.Location = hotel?.Location;
+    //    updatedHotel.StarRating = hotel?.StarRating;
+    //    updatedHotel.HotelImage = hotel?.HotelImage;
+    //    updatedHotel.HotelImage2 = hotel?.HotelImage2;
+    //    updatedHotel.HotelImage3 = hotel?.HotelImage3;
+    //    updatedHotel.HotelImage4 = hotel?.HotelImage4;
+    //    updatedHotel.Price = hotel?.Price;
+    //    updatedHotel.PeopleCount = hotel?.PeopleCount;
+    //    updatedHotel.Bathrooms = hotel?.Bathrooms;
+    //    updatedHotel.Bedrooms = hotel?.Bedrooms;
+
+    //    _dbContext.Update<Hotel>(updatedHotel);
+    //    await _dbContext.SaveChangesAsync();
+
+    //    Log.Information($"{updatedHotel} user updated.");
+    //    return RedirectToAction("Index", "Home");
+    //}
     [HttpPost]
     public async Task<IActionResult> UpdateHotel(UpdateHotelRequest hotel)
     {
@@ -128,26 +158,74 @@ public class HotelController : Controller
             return NotFound();
         }
 
+        if (!string.IsNullOrEmpty(hotel.HotelName))
+        {
+            updatedHotel.HotelName = hotel.HotelName;
+        }
 
-        updatedHotel.HotelName = hotel?.HotelName;
-        updatedHotel.City = hotel?.City;
-        updatedHotel.Location = hotel?.Location;
-        updatedHotel.StarRating = hotel?.StarRating;
-        updatedHotel.HotelImage = hotel?.HotelImage;
-        updatedHotel.HotelImage2 = hotel?.HotelImage2;
-        updatedHotel.HotelImage3 = hotel?.HotelImage3;
-        updatedHotel.HotelImage4 = hotel?.HotelImage4;
-        updatedHotel.Price = hotel?.Price;
-        updatedHotel.PeopleCount = hotel?.PeopleCount;
-        updatedHotel.Bathrooms = hotel?.Bathrooms;
-        updatedHotel.Bedrooms = hotel?.Bedrooms;
+        if (!string.IsNullOrEmpty(hotel.City))
+        {
+            updatedHotel.City = hotel.City;
+        }
 
-        _dbContext.Update<Hotel>(updatedHotel);
+        if (!string.IsNullOrEmpty(hotel.Location))
+        {
+            updatedHotel.Location = hotel.Location;
+        }
+
+        if (hotel.StarRating != null)
+        {
+            updatedHotel.StarRating = hotel.StarRating;
+        }
+
+        // Alanlar null değilse güncelle
+        if (hotel.HotelImage != null)
+        {
+            updatedHotel.HotelImage = hotel.HotelImage;
+        }
+
+        if (hotel.HotelImage2 != null)
+        {
+            updatedHotel.HotelImage2 = hotel.HotelImage2;
+        }
+
+        if (hotel.HotelImage3 != null)
+        {
+            updatedHotel.HotelImage3 = hotel.HotelImage3;
+        }
+
+        if (hotel.HotelImage4 != null)
+        {
+            updatedHotel.HotelImage4 = hotel.HotelImage4;
+        }
+
+        if (hotel.Price != null)
+        {
+            updatedHotel.Price = hotel.Price;
+        }
+
+        if (hotel.PeopleCount != null)
+        {
+            updatedHotel.PeopleCount = hotel.PeopleCount;
+        }
+
+        if (hotel.Bathrooms != null)
+        {
+            updatedHotel.Bathrooms = hotel.Bathrooms;
+        }
+
+        if (hotel.Bedrooms != null)
+        {
+            updatedHotel.Bedrooms = hotel.Bedrooms;
+        }
+
+        _dbContext.Update(updatedHotel);
         await _dbContext.SaveChangesAsync();
 
         Log.Information($"{updatedHotel} user updated.");
         return RedirectToAction("Index", "Home");
     }
+
 
     [HttpPost]
     public async Task<IActionResult> SearchHotel(string city)
