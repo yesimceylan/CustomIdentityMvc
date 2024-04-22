@@ -1,1 +1,2 @@
-Read me file
+This is a project created for  hotel reservation system. I created my project using MVC pattern and .Net Core 8.0. I used EF Core from ORM approaches, I preferred Code First approach to interact with the database. I manipulated the database by creating migration. I did SignIn Manager operations (Register, SignIn, Logout) using Identity library. I created Serilog configuration for log operations. I integrated this structure internally in Console and externally in a txt file. I used mail sending services in Register, I integrated it into my project with smpt-gmail port.
+
