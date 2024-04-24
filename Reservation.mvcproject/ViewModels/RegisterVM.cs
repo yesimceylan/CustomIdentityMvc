@@ -21,5 +21,11 @@ namespace Reservation.mvcproject.ViewModels
         [DataType(DataType.MultilineText)]
         public string? Adress { get; set; }
         public string? PhoneNumber { get; set; }
+        [Compare("PhoneNumber", ErrorMessage ="Phone number don't match.")]
+        [Display(Name ="Confirm PhoneNumber")]
+        public string? PhoneNumberConfirmed { get; set; }
+        
+        [Display(Name = "Gender (F/M)")]
+        public string? Gender { get; set; }
     }
 }

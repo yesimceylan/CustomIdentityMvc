@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "OR3uSjlpFotwthYZvm4YyxuC2ZBwADRUWF3LoNt+S/m7qXZAkmmAwn3hBT/TD/Ijbro7m1E7dDsKyCSYcxCdOg==",
+  "dgSpecHash": "xlEpUnfTQ8gQDo4Cw192t1PuV4/enjwN6aJprmg85vUJ5stSJUqnQDKUiepqSl62Zr0VCEUYsqq8r+oHwv/f+g==",
   "success": true,
   "projectFilePath": "C:\\Users\\yesim\\source\\repos\\test\\Reservation.mvcproject\\Reservation.mvcproject.csproj",
   "expectedPackageFiles": [
@@ -91,6 +91,7 @@
     "C:\\Users\\yesim\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.4\\microsoft.entityframeworkcore.abstractions.8.0.4.nupkg.sha512",
     "C:\\Users\\yesim\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.4\\microsoft.entityframeworkcore.analyzers.8.0.4.nupkg.sha512",
     "C:\\Users\\yesim\\.nuget\\packages\\microsoft.entityframeworkcore.design\\8.0.4\\microsoft.entityframeworkcore.design.8.0.4.nupkg.sha512",
+    "C:\\Users\\yesim\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\8.0.4\\microsoft.entityframeworkcore.inmemory.8.0.4.nupkg.sha512",
     "C:\\Users\\yesim\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.4\\microsoft.entityframeworkcore.relational.8.0.4.nupkg.sha512",
     "C:\\Users\\yesim\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.4\\microsoft.entityframeworkcore.sqlserver.8.0.4.nupkg.sha512",
     "C:\\Users\\yesim\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.4\\microsoft.entityframeworkcore.tools.8.0.4.nupkg.sha512",

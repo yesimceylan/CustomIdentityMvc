@@ -56,7 +56,8 @@ namespace Reservation.mvcproject.Controllers
                     UserName = model.Email,
                     Email = model.Email,
                     Adress=model.Adress,
-                    PhoneNumber = model.PhoneNumber
+                    PhoneNumber = model.PhoneNumber,
+                    Gender=model.Gender
                 };
                 var result = await userManager.CreateAsync(user, model.Password!);
                 if (result.Succeeded)

@@ -32,6 +32,12 @@
         <span class="text-danger">@Html.ValidationMessageFor(m => m.Adress)</span>
     </div>
 
+    <div class="form-group">
+        <label asp-for="Gender">Gender (F/M)</label>
+        <input asp-for="Gender" class="form-control" />
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.Gender)</span>
+    </div>
+
     <br />
     <button type="submit" class="btn btn-primary">Update</button>
 </form>

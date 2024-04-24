@@ -102,6 +102,14 @@ namespace Reservation.mvcproject.Controllers
             {
                 updatedUser.Adress = user.Adress;
             }
+            if (!string.IsNullOrEmpty(user.Gender))
+            {
+                updatedUser.Gender = user.Gender;
+                if (user.Gender != "M" && user.Gender != "F")
+                {
+                    updatedUser.Gender = null;
+                }
+            }
 
             _dbContext.Users.Update(updatedUser);
             await _dbContext.SaveChangesAsync();

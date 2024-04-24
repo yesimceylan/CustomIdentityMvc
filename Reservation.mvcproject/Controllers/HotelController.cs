@@ -15,6 +15,7 @@ using System.Drawing.Printing;
 using System.Drawing;
 using System.Reflection;
 using System.Runtime.InteropServices;
+using Microsoft.EntityFrameworkCore.Query.Internal;
 
 
 namespace Reservation.mvcproject.Controllers;
@@ -66,6 +67,7 @@ public class HotelController : Controller
     }
     public IActionResult HotelDetailsIndex(Guid id)
     {
+
         var hotel = _dbContext.Hotels.FirstOrDefault(x => x.Id == id);
         return View(hotel);
     }
@@ -111,7 +113,15 @@ public class HotelController : Controller
             Price = hotel.Price,
             PeopleCount = hotel.PeopleCount,
             Bathrooms = hotel.Bathrooms,
-            Bedrooms = hotel.Bedrooms
+            Bedrooms = hotel.Bedrooms,
+            Wifi = hotel.Wifi,
+            Shower = hotel.Shower,
+            TV = hotel.TV,
+            Kitchen= hotel.Kitchen,
+            Heating= hotel.Heating,
+            Accessible= hotel.Accessible,
+            CheckIn= hotel.CheckIn,
+            CheckOut= hotel.CheckOut
         };
         await _dbContext.Hotels.AddAsync(newHotel);
         await _dbContext.SaveChangesAsync();
@@ -162,7 +172,6 @@ public class HotelController : Controller
             updatedHotel.StarRating = hotel.StarRating;
         }
 
-        // Alanlar null değilse güncelle
         if (hotel.HotelImage != null)
         {
             updatedHotel.HotelImage = hotel.HotelImage;
@@ -202,7 +211,38 @@ public class HotelController : Controller
         {
             updatedHotel.Bedrooms = hotel.Bedrooms;
         }
-
+        if (hotel.Wifi != null)
+        {
+            updatedHotel.Wifi = hotel.Wifi;
+        }
+        if (hotel.Shower != null)
+        {
+            updatedHotel.Shower = hotel.Shower;
+        }
+        if (hotel.TV != null)
+        {
+            updatedHotel.TV = hotel.TV;
+        }
+        if (hotel.Kitchen != null)
+        {
+            updatedHotel.Kitchen = hotel.Kitchen;
+        }
+        if (hotel.Heating != null)
+        {
+            updatedHotel.Heating = hotel.Heating;
+        }
+        if (hotel.Accessible != null)
+        {
+            updatedHotel.Accessible = hotel.Accessible;
+        }
+        if (hotel.CheckIn != null)
+        {
+            updatedHotel.CheckIn = hotel.CheckIn;
+        }
+        if (hotel.CheckOut != null)
+        {
+            updatedHotel.CheckOut = hotel.CheckOut;
+        }
         _dbContext.Update(updatedHotel);
         await _dbContext.SaveChangesAsync();
 

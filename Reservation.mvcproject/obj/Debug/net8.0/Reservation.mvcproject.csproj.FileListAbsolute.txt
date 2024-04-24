@@ -177,6 +177,7 @@ C:\Users\yesim\source\repos\test\Reservation.mvcproject\bin\Debug\net8.0\Microso
 C:\Users\yesim\source\repos\test\Reservation.mvcproject\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\yesim\source\repos\test\Reservation.mvcproject\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\yesim\source\repos\test\Reservation.mvcproject\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\yesim\source\repos\test\Reservation.mvcproject\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\yesim\source\repos\test\Reservation.mvcproject\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\yesim\source\repos\test\Reservation.mvcproject\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\yesim\source\repos\test\Reservation.mvcproject\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll

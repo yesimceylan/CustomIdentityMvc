@@ -19,5 +19,8 @@ namespace Reservation.mvcproject.Models.Request
 
         [Column(TypeName = "NVARCHAR(MAX)")]
         public string? PhoneNumber { get; set; }
+
+        public string? Gender { get; set; }
+
     }
 }

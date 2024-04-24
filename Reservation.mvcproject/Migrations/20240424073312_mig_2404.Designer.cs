@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Reservation.mvcproject.Data;
 
@@ -11,9 +12,11 @@ using Reservation.mvcproject.Data;
 namespace Reservation.mvcproject.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240424073312_mig_2404")]
+    partial class mig_2404
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -161,26 +164,14 @@ namespace Reservation.mvcproject.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<bool>("Accessible")
-                        .HasColumnType("bit");
-
                     b.Property<string>("Bathrooms")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Bedrooms")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("CheckIn")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("CheckOut")
-                        .HasColumnType("int");
-
                     b.Property<string>("City")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("Heating")
-                        .HasColumnType("bit");
 
                     b.Property<string>("HotelImage")
                         .HasColumnType("nvarchar(max)");
@@ -197,9 +188,6 @@ namespace Reservation.mvcproject.Migrations
                     b.Property<string>("HotelName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("Kitchen")
-                        .HasColumnType("bit");
-
                     b.Property<string>("Location")
                         .HasColumnType("nvarchar(max)");
 
@@ -209,16 +197,16 @@ namespace Reservation.mvcproject.Migrations
                     b.Property<string>("Price")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("Shower")
+                    b.Property<bool?>("Shower")
                         .HasColumnType("bit");
 
                     b.Property<string>("StarRating")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("TV")
+                    b.Property<bool?>("TV")
                         .HasColumnType("bit");
 
-                    b.Property<bool>("Wifi")
+                    b.Property<bool?>("Wifi")
                         .HasColumnType("bit");
 
                     b.HasKey("Id");
@@ -287,9 +275,6 @@ namespace Reservation.mvcproject.Migrations
 
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
-
-                    b.Property<string>("Gender")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
