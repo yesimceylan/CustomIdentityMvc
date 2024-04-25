@@ -1,0 +1,17 @@
+﻿@model Reservation.mvcproject.Entities.Res;
+@{
+    ViewData["Title"] = "DeleteReservationIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Delete Rez</h1>
+
+<form asp-action="DeleteReservation" asp-controller="Reservation" method="post">
+    <div class="form-group">
+        <label asp-for="Id"></label>
+        <input asp-for="Id" class="form-control" />
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.Id)</span>
+        <br />
+        <button type="submit" class="btn btn-primary">Delete</button>
+    </div>
+</form>

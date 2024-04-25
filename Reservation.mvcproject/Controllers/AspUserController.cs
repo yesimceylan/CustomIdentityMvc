@@ -6,7 +6,6 @@ using Reservation.mvcproject.Data;
 using Reservation.mvcproject.Models.Request;
 using Reservation.mvcproject.ViewModels;
 using Serilog;
-using System.Web.Providers.Entities;
 
 namespace Reservation.mvcproject.Controllers
 {

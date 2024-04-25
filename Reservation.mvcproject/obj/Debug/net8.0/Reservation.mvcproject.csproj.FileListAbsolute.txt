@@ -150,10 +150,7 @@ C:\Users\yesim\source\repos\test\Reservation.mvcproject\bin\Debug\net8.0\Reserva
 C:\Users\yesim\source\repos\test\Reservation.mvcproject\bin\Debug\net8.0\Reservation.mvcproject.pdb
 C:\Users\yesim\source\repos\test\Reservation.mvcproject\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\yesim\source\repos\test\Reservation.mvcproject\bin\Debug\net8.0\Azure.Identity.dll
-C:\Users\yesim\source\repos\test\Reservation.mvcproject\bin\Debug\net8.0\EntityFramework.SqlServer.dll
-C:\Users\yesim\source\repos\test\Reservation.mvcproject\bin\Debug\net8.0\EntityFramework.dll
 C:\Users\yesim\source\repos\test\Reservation.mvcproject\bin\Debug\net8.0\Humanizer.dll
-C:\Users\yesim\source\repos\test\Reservation.mvcproject\bin\Debug\net8.0\System.Web.Providers.dll
 C:\Users\yesim\source\repos\test\Reservation.mvcproject\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\yesim\source\repos\test\Reservation.mvcproject\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\yesim\source\repos\test\Reservation.mvcproject\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

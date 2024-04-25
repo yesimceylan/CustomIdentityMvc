@@ -22,7 +22,14 @@ namespace Reservation.mvcproject.Controllers
         {
             return View();
         }
-
+        public IActionResult ReservationCompletedIndex()
+        {
+            return View();
+        }
+        public IActionResult DeleteReservationIndex()
+        {
+            return View();
+        }
 
         public async Task<IActionResult> CreateReservation(CreateReservationRequest res)
         {
@@ -42,6 +49,29 @@ namespace Reservation.mvcproject.Controllers
             await _dbContext.Reservations.AddAsync(newres);
             await _dbContext.SaveChangesAsync();
             Log.Information($"{newres.Id} new reservation registration.");
+            return View("ReservationCompletedIndex",newres);
+        }
+        public async Task<IActionResult> ReservationCompleted()
+        {
+            var defaultBookingNumberPrefix = "RV";
+            Random rnd= new();
+            var random = rnd.Next(100000, 999999);
+            var resNumber= defaultBookingNumberPrefix + random;
+            await _dbContext.AddAsync(resNumber);
+            await _dbContext.SaveChangesAsync();
+            Log.Information($"{resNumber} / added new reservation.");
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> DeleteReservation(Guid id)
+        {
+            var res = await _dbContext.Reservations.FindAsync(id);
+            if (res == null)
+            {
+                NotFound();
+            }
+            _dbContext.Reservations.Remove(res);
+            await _dbContext.SaveChangesAsync();
             return RedirectToAction("Index", "Home");
         }
     }

@@ -253,6 +253,9 @@ namespace Reservation.mvcproject.Migrations
                     b.Property<string>("rezName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("rezNumber")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int?>("rezPerson")
                         .HasColumnType("int");
 

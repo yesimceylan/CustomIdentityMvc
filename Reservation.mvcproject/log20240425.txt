@@ -53,3 +53,56 @@
 2024-04-25 10:28:09.188 +03:00 [INF] Hotels listed.
 2024-04-25 10:28:16.183 +03:00 [INF] Hotels listed.
 2024-04-25 10:28:27.086 +03:00 [INF] Hotels listed.
+2024-04-25 10:34:00.429 +03:00 [INF] Hotels listed.
+2024-04-25 10:35:46.563 +03:00 [INF] Hotels listed.
+2024-04-25 10:41:37.447 +03:00 [INF] Hotels listed.
+2024-04-25 10:41:46.946 +03:00 [INF] Hotels listed.
+2024-04-25 11:30:41.904 +03:00 [INF] Hotels listed.
+2024-04-25 11:33:59.526 +03:00 [INF] Hotels listed.
+2024-04-25 11:34:58.951 +03:00 [INF] Hotels listed.
+2024-04-25 13:34:03.106 +03:00 [INF] bfc87719-d172-4ebb-e542-08dc651339d2 new reservation registration.
+2024-04-25 13:37:10.381 +03:00 [INF] 8f72fd36-1df1-484f-9110-08dc6513a975 new reservation registration.
+2024-04-25 13:38:34.295 +03:00 [INF] d47391a1-a1b7-4cac-9111-08dc6513a975 new reservation registration.
+2024-04-25 13:39:32.240 +03:00 [INF] fb38e669-c425-4766-9112-08dc6513a975 new reservation registration.
+2024-04-25 13:39:40.629 +03:00 [INF] 849ad8c4-1e22-4d84-9113-08dc6513a975 new reservation registration.
+2024-04-25 13:41:11.524 +03:00 [INF] 7a7b91c7-2591-4a33-9114-08dc6513a975 new reservation registration.
+2024-04-25 13:41:30.245 +03:00 [INF] e96de623-df77-43cd-9115-08dc6513a975 new reservation registration.
+2024-04-25 13:43:17.160 +03:00 [INF] 2dee34c5-5d7c-4c01-9116-08dc6513a975 new reservation registration.
+2024-04-25 13:43:52.504 +03:00 [INF] eb64fd6d-e8ce-4275-9117-08dc6513a975 new reservation registration.
+2024-04-25 13:44:30.068 +03:00 [INF] 35f501c2-707e-4f46-9118-08dc6513a975 new reservation registration.
+2024-04-25 13:44:46.086 +03:00 [INF] a16e0d4f-a065-47ed-9119-08dc6513a975 new reservation registration.
+2024-04-25 13:49:42.345 +03:00 [INF] b3003ecb-5ac3-4841-ca84-08dc651569aa new reservation registration.
+2024-04-25 13:51:31.376 +03:00 [INF] b3ca0727-2888-4ea7-ca85-08dc651569aa new reservation registration.
+2024-04-25 13:56:43.088 +03:00 [INF] 60e307dc-8ab3-4d07-ca86-08dc651569aa new reservation registration.
+2024-04-25 13:58:05.892 +03:00 [INF] af9eb8cc-a0f1-40ec-ca87-08dc651569aa new reservation registration.
+2024-04-25 14:14:31.038 +03:00 [INF] 48ce5526-a805-41ee-1908-08dc6518e10d new reservation registration.
+2024-04-25 14:15:42.951 +03:00 [INF] 6712c969-3219-4a36-1909-08dc6518e10d new reservation registration.
+2024-04-25 14:15:55.680 +03:00 [INF] c664be8f-4466-4736-190a-08dc6518e10d new reservation registration.
+2024-04-25 14:16:29.916 +03:00 [INF] cd9380ac-6529-4e70-190b-08dc6518e10d new reservation registration.
+2024-04-25 14:16:58.633 +03:00 [INF] ded4ac05-da8f-4d8d-190c-08dc6518e10d new reservation registration.
+2024-04-25 14:17:11.765 +03:00 [INF] 24c9491d-e78d-4e67-190d-08dc6518e10d new reservation registration.
+2024-04-25 14:17:17.429 +03:00 [INF] 6375cb40-35c4-48d7-190e-08dc6518e10d new reservation registration.
+2024-04-25 14:17:22.324 +03:00 [INF] 94c87795-7e33-41e4-190f-08dc6518e10d new reservation registration.
+2024-04-25 14:17:27.785 +03:00 [INF] 50825bb9-b303-46d1-1910-08dc6518e10d new reservation registration.
+2024-04-25 14:17:33.872 +03:00 [INF] d6ba8336-4efa-4a5b-1911-08dc6518e10d new reservation registration.
+2024-04-25 14:17:43.432 +03:00 [INF] b5ac63a7-d8fc-42f7-1912-08dc6518e10d new reservation registration.
+2024-04-25 14:17:58.514 +03:00 [INF] 7455bc65-09ce-46f4-1913-08dc6518e10d new reservation registration.
+2024-04-25 14:18:15.896 +03:00 [INF] b8d4d59a-f0c8-4d6e-1914-08dc6518e10d new reservation registration.
+2024-04-25 14:18:22.638 +03:00 [INF] 67dc0fe2-58a2-450d-1915-08dc6518e10d new reservation registration.
+2024-04-25 14:18:48.466 +03:00 [INF] 1ce18723-7a02-4564-1916-08dc6518e10d new reservation registration.
+2024-04-25 14:18:55.714 +03:00 [INF] 79bee901-885f-4378-1917-08dc6518e10d new reservation registration.
+2024-04-25 14:19:02.220 +03:00 [INF] 8350734d-031b-44a6-1918-08dc6518e10d new reservation registration.
+2024-04-25 14:19:09.240 +03:00 [INF] 56911ac3-5da9-4233-1919-08dc6518e10d new reservation registration.
+2024-04-25 14:19:16.580 +03:00 [INF] b6d6dfab-a970-423a-191a-08dc6518e10d new reservation registration.
+2024-04-25 14:19:28.727 +03:00 [INF] d655109a-5b32-4ae4-191b-08dc6518e10d new reservation registration.
+2024-04-25 14:19:34.333 +03:00 [INF] 874cbe87-3978-47a1-191c-08dc6518e10d new reservation registration.
+2024-04-25 14:20:00.185 +03:00 [INF] 118b7c8e-dbd9-4a97-191d-08dc6518e10d new reservation registration.
+2024-04-25 14:20:07.458 +03:00 [INF] 57d3c8b0-977a-4cb9-191e-08dc6518e10d new reservation registration.
+2024-04-25 14:20:13.361 +03:00 [INF] 25de6dfb-0f07-4bb5-191f-08dc6518e10d new reservation registration.
+2024-04-25 14:20:26.400 +03:00 [INF] 71f1dccf-6e62-4957-1920-08dc6518e10d new reservation registration.
+2024-04-25 14:48:14.899 +03:00 [INF] HotelId: 72329c32-530c-48b8-c325-08dc5d45816e to be viewed.
+2024-04-25 14:48:21.483 +03:00 [INF] Hotels listed.
+2024-04-25 15:34:56.874 +03:00 [INF] 4731c9ef-5ddd-432c-aaa9-08dc65241d77 new reservation registration.
+2024-04-25 15:40:42.129 +03:00 [INF] c57e7b84-cc39-47fd-aaaa-08dc65241d77 new reservation registration.
+2024-04-25 15:58:14.059 +03:00 [INF] b02b6b09-57f2-4883-8ff4-08dc65275e51 new reservation registration.
+2024-04-25 16:01:37.147 +03:00 [INF] bea467fb-b92d-42d5-3212-08dc6527d74e new reservation registration.

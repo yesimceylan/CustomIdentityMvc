@@ -9,9 +9,11 @@
 <form asp-action="GetHotelById" asp-controller="Hotel" method="get">
 
     <div class="form-group">
-        <label asp-for="Id"></label>
-        <input asp-for="Id" class="form-control" />
-        <span class="text-danger">@Html.ValidationMessageFor(m => m.Id)</span>
+        <div class="col-sm-5">
+            <label asp-for="Id"></label>
+            <input asp-for="Id" class="form-control" />
+            <span class="text-danger">@Html.ValidationMessageFor(m => m.Id)</span>
+        </div>
     </div>
     <br />
     <button type="submit" class="btn btn-primary">Get</button>

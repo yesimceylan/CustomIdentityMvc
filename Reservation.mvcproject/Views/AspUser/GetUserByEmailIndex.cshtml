@@ -10,9 +10,11 @@
 <form asp-action="GetUserByEmail" asp-controller="AspUser" method="get">
 
     <div class="form-group">
-        <label asp-for="UserName">Email</label>
-        <input asp-for="UserName" class="form-control" />
-        <span class="text-danger">@Html.ValidationMessageFor(m => m.UserName)</span>
+        <div class="col-sm-4">
+            <label asp-for="UserName">Email</label>
+            <input asp-for="UserName" class="form-control" />
+            <span class="text-danger">@Html.ValidationMessageFor(m => m.UserName)</span>
+        </div>
     </div>
     <br />
     <button type="submit" class="btn btn-primary">Get</button>

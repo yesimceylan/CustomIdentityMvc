@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\yesim\\source\\repos\\test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6DF08456-5429-423D-890F-32F1F1C74525}|Reservation.mvcproject\\Reservation.mvcproject.csproj|c:\\users\\yesim\\source\\repos\\test\\reservation.mvcproject\\views\\aspuser\\getuserindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6DF08456-5429-423D-890F-32F1F1C74525}|Reservation.mvcproject\\Reservation.mvcproject.csproj|solutionrelative:reservation.mvcproject\\views\\aspuser\\getuserindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6DF08456-5429-423D-890F-32F1F1C74525}|Reservation.mvcproject\\Reservation.mvcproject.csproj|c:\\users\\yesim\\source\\repos\\test\\reservation.mvcproject\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DF08456-5429-423D-890F-32F1F1C74525}|Reservation.mvcproject\\Reservation.mvcproject.csproj|solutionrelative:reservation.mvcproject\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DF08456-5429-423D-890F-32F1F1C74525}|Reservation.mvcproject\\Reservation.mvcproject.csproj|c:\\users\\yesim\\source\\repos\\test\\reservation.mvcproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6DF08456-5429-423D-890F-32F1F1C74525}|Reservation.mvcproject\\Reservation.mvcproject.csproj|solutionrelative:reservation.mvcproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GetUserIndex.cshtml",
-              "DocumentMoniker": "C:\\Users\\yesim\\source\\repos\\test\\Reservation.mvcproject\\Views\\AspUser\\GetUserIndex.cshtml",
-              "RelativeDocumentMoniker": "Reservation.mvcproject\\Views\\AspUser\\GetUserIndex.cshtml",
-              "ToolTip": "C:\\Users\\yesim\\source\\repos\\test\\Reservation.mvcproject\\Views\\AspUser\\GetUserIndex.cshtml",
-              "RelativeToolTip": "Reservation.mvcproject\\Views\\AspUser\\GetUserIndex.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB4AAAAdAAAA",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\yesim\\source\\repos\\test\\Reservation.mvcproject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Reservation.mvcproject\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\yesim\\source\\repos\\test\\Reservation.mvcproject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Reservation.mvcproject\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAIwI4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-25T07:01:46.084Z",
+              "WhenOpened": "2024-04-25T12:42:00.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReservationController.cs",
+              "DocumentMoniker": "C:\\Users\\yesim\\source\\repos\\test\\Reservation.mvcproject\\Controllers\\ReservationController.cs",
+              "RelativeDocumentMoniker": "Reservation.mvcproject\\Controllers\\ReservationController.cs",
+              "ToolTip": "C:\\Users\\yesim\\source\\repos\\test\\Reservation.mvcproject\\Controllers\\ReservationController.cs",
+              "RelativeToolTip": "Reservation.mvcproject\\Controllers\\ReservationController.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAA7wEUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T11:56:10.9Z",
               "EditorCaption": ""
             }
           ]

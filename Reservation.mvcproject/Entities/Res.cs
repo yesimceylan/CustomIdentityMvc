@@ -17,6 +17,6 @@ namespace Reservation.mvcproject.Entities
         public Guid HotelId { get; set; }
         [ForeignKey("HotelId")]
         public Hotel Hotel { get; set; }
-
+        public string? rezNumber { get; set; }
     }
 }
