@@ -22,9 +22,11 @@
                         <span class="text-danger">@Html.ValidationMessageFor(m => m.City)</span>
                     </div>
 
-                    <div class="col-sm-3" <label asp-for="Location"></label>
-        <input asp-for="Location" class="form-control" />
-        <span class="text-danger">@Html.ValidationMessageFor(m => m.Location)</span></div>
+                    <div class="col-sm-3">
+                        <label asp-for="Location"></label>
+                        <input asp-for="Location" class="form-control" />
+                        <span class="text-danger">@Html.ValidationMessageFor(m => m.Location)</span>
+                    </div>
 
                     <div class="col-sm-3">
                         <label asp-for="StarRating"></label>
