@@ -22,7 +22,7 @@ namespace Reservation.mvcproject.Controllers
         {
             return View();
         }
-        public IActionResult ReservationCompletedIndex()
+        public IActionResult ReservationDetailIndex()
         {
             return View();
         }
@@ -33,7 +33,10 @@ namespace Reservation.mvcproject.Controllers
 
         public async Task<IActionResult> CreateReservation(CreateReservationRequest res)
         {
-
+            var defaultBookingNumberPrefix = "RV";
+            Random rnd = new();
+            var random = rnd.Next(100000, 999999);
+            var resNumber = defaultBookingNumberPrefix + random;
 
             Res newres = new()
             {
@@ -44,24 +47,24 @@ namespace Reservation.mvcproject.Controllers
                 rezDescription = res.rezDescription,
                 rezDate = res.rezDate,
                 rezEndDate = res.rezEndDate,
-                HotelId = res.HotelId
+                HotelId = res.HotelId,
+                rezNumber=resNumber,
             };
             await _dbContext.Reservations.AddAsync(newres);
             await _dbContext.SaveChangesAsync();
             Log.Information($"{newres.Id} new reservation registration.");
-            return View("ReservationCompletedIndex",newres);
+            Log.Information($"{newres.rezNumber} / added new reservation.");
+            return RedirectToAction("ReservationDetail", "Reservation", new { resId = newres.Id });
         }
-        public async Task<IActionResult> ReservationCompleted()
+
+
+        public async Task<IActionResult> ReservationDetail(Guid resId)
         {
-            var defaultBookingNumberPrefix = "RV";
-            Random rnd= new();
-            var random = rnd.Next(100000, 999999);
-            var resNumber= defaultBookingNumberPrefix + random;
-            await _dbContext.AddAsync(resNumber);
-            await _dbContext.SaveChangesAsync();
-            Log.Information($"{resNumber} / added new reservation.");
-            return View();
+            var res = await _dbContext.Reservations.FindAsync(resId);
+
+            return View("ReservationDetailIndex",res);
         }
+
         [HttpPost]
         public async Task<IActionResult> DeleteReservation(Guid id)
         {
