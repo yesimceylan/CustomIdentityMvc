@@ -154,3 +154,7 @@
 2024-04-25 17:26:58.655 +03:00 [INF] RV772621 / added new reservation.
 2024-04-25 18:02:34.308 +03:00 [INF] 8eba54fc-61b4-48b7-197e-08dc6538bce9 new reservation registration.
 2024-04-25 18:02:34.352 +03:00 [INF] RV595135 / added new reservation.
+2024-04-25 20:55:46.400 +03:00 [INF] 1cacb956-2dc4-443e-dfc8-08dc6550ef23 new reservation registration.
+2024-04-25 20:55:46.457 +03:00 [INF] RV456289 / added new reservation.
+2024-04-25 21:07:13.466 +03:00 [INF] 6d497b93-cb7f-49e5-776e-08dc6552888d new reservation registration.
+2024-04-25 21:07:13.518 +03:00 [INF] RV210797 / added new reservation.

@@ -23,17 +23,13 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <p class="w3-center">
-                                    @if (user.Gender == "F")
+                                    @if (user.Gender == "female")
                                     {
                                         <img src="https://cdn-icons-png.flaticon.com/512/4042/4042422.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar">
                                     }
-                                    @if (user.Gender == "M")
+                                    @if (user.Gender == "male")
                                     {
                                         <img src="https://cdn-icons-png.flaticon.com/512/4042/4042356.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar">
-                                    }
-                                    @if (user.Gender == null)
-                                    {
-                                        <img src="https://w7.pngwing.com/pngs/764/245/png-transparent-agender-gender-genderless-no-gender-genderqueer-person-identity-genders-icon.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar">
                                     }
                                 </p>
                             </div>

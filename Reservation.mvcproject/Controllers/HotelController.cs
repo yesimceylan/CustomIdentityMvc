@@ -61,6 +61,12 @@ public class HotelController : Controller
     {
         return View();
     }
+    //[HttpPost]
+    //public IActionResult SearchHotelIndex(string aa)
+    //{
+    //    var cities = _dbContext.Hotels.Select(c => c.City).ToList();
+    //    return View();
+    //}
     public IActionResult SearchedHotelIndex()
     {
         return View();
@@ -255,6 +261,7 @@ public class HotelController : Controller
     public async Task<IActionResult> SearchHotel(string city)
     {
         var hotels = await _dbContext.Hotels.Where(x => x.City.Contains(city)).ToListAsync();
+        var cities = _dbContext.Hotels.Select(c => c.City).Distinct().ToList();
         if (hotels.Count == 0)
         {
             TempData["ReservationFailed"] = "City ​​not found! Please enter or change a different city.";

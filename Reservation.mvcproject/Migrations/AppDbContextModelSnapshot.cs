@@ -235,6 +235,9 @@ namespace Reservation.mvcproject.Migrations
                     b.Property<Guid>("HotelId")
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<int?>("rezChild")
+                        .HasColumnType("int");
+
                     b.Property<DateTime?>("rezCreateDate")
                         .HasColumnType("datetime2");
 

@@ -6,6 +6,8 @@ using Reservation.mvcproject.Entities;
 using Serilog;
 using System.Security.Policy;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.CodeAnalysis.Elfie.Serialization;
 
 namespace Reservation.mvcproject.Controllers
 {
@@ -30,6 +32,14 @@ namespace Reservation.mvcproject.Controllers
         {
             return View();
         }
+        public IActionResult GetReservationIndex()
+        {
+            return View();
+        }
+        public IActionResult GetDetailIndex()
+        {
+            return View();
+        }
 
         public async Task<IActionResult> CreateReservation(CreateReservationRequest res)
         {
@@ -44,11 +54,12 @@ namespace Reservation.mvcproject.Controllers
                 rezPhoneNumber = res.rezPhoneNumber,
                 rezEmail = res.rezEmail,
                 rezPerson = res.rezPerson,
+                rezChild = res.rezChild,
                 rezDescription = res.rezDescription,
                 rezDate = res.rezDate,
                 rezEndDate = res.rezEndDate,
                 HotelId = res.HotelId,
-                rezNumber=resNumber,
+                rezNumber = resNumber
             };
             await _dbContext.Reservations.AddAsync(newres);
             await _dbContext.SaveChangesAsync();
@@ -62,7 +73,7 @@ namespace Reservation.mvcproject.Controllers
         {
             var res = await _dbContext.Reservations.FindAsync(resId);
 
-            return View("ReservationDetailIndex",res);
+            return View("ReservationDetailIndex", res);
         }
 
         [HttpPost]
@@ -76,6 +87,26 @@ namespace Reservation.mvcproject.Controllers
             _dbContext.Reservations.Remove(res);
             await _dbContext.SaveChangesAsync();
             return RedirectToAction("Index", "Home");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetReservation(string rezNumber)
+        {
+            var res = await _dbContext.Reservations.FirstOrDefaultAsync(r => r.rezNumber == rezNumber);
+            if (res == null)
+            {
+                TempData["ReservationFailed"] = "Reservation ​​not found! Please enter or change a different reservation number.";
+                return View("GetReservationIndex");
+            }
+            Log.Information($"Reservation Number: {rezNumber} to be viewed.");
+            return View("GetDetailIndex", res);
+        }
+
+        public async Task<IActionResult> GetDetail(string rezNumber)
+        {
+            var res = await _dbContext.Reservations.FindAsync(rezNumber);
+
+            return View("GetDetailIndex", res);
         }
     }
 }

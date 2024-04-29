@@ -46,6 +46,10 @@
 else if (TempData["GetUserFailed"] != null)
 {
     <p class="text-center">
-        <div style="margin-top: 20px;" class="alert alert-danger" role="alert">@TempData["GetUserFailed"]</div>
+        <div class="col-sm-3">
+            <div style="margin-top: 20px;" class="alert alert-danger" role="alert">
+                @TempData["GetUserFailed"]
+            </div>
+        </div>
     </p>
 }

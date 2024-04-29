@@ -1,0 +1,31 @@
+﻿@model Reservation.mvcproject.Entities.Res;
+@{
+    ViewData["Title"] = "GetReservationIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+
+<form asp-action="GetReservation" asp-controller="Reservation" method="get">
+
+    <div class="form-group">
+        <div class="col-sm-5">
+            <label asp-for="rezNumber" style="font-size: 18px;">Reservation Number:</label>
+            <input asp-for="rezNumber" class="form-control" />
+            <span class="text-danger">@Html.ValidationMessageFor(m => m.rezNumber)</span>
+        </div>
+    </div>
+    <label style="color: darkred;">(Please enter with 'RV' at the beginning!)</label>
+    <br />
+    <br />
+    <button type="submit" class="btn btn-primary">Get</button>
+</form>
+
+@if (TempData["ReservationFailed"] != null)
+{
+    <div class="text-center" style="margin-top: 20px;">
+        <div class="col-sm-6">
+        <div class="alert alert-danger" role="alert">@TempData["ReservationFailed"]</div>
+        </div>
+    </div>
+}

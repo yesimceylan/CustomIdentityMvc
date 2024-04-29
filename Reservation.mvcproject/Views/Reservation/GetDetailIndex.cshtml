@@ -1,0 +1,97 @@
+﻿@model Reservation.mvcproject.Entities.Res;
+@{
+    ViewData["Title"] = "GetDetailIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    body {
+        background-image: url('https://images.unsplash.com/photo-1568495248636-6432b97bd949?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+</style>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<header class="w3-display-container w3-content" style="max-width:1500px ; margin-top: 180px;">
+    <div class="w3-display-center w3-padding w3-col l6 m8 ">
+        <div class="w3-container w3-red">
+            <h2><i class="fa fa-bed w3-margin-right">  Reservation Card</i></h2>
+        </div>
+        <div class="w3-container w3-white w3-padding-16">
+            <form action="/action_page.php" target="_blank">
+                <div class="w3-row-padding" style="margin:0 -16px;">
+                    <div class="w3-half w3-margin-bottom">
+                        <label><i class="fa fa-ticket"></i> Reservation No: @Model.rezNumber</label>
+                    </div>
+                    <div class="w3-half w3-margin-bottom">
+                        <label><i class="fa fa-user"></i> Name: @Model.rezName</label>
+                    </div>
+                </div>
+
+                <div class="w3-row-padding" style="margin:0 -16px;">
+                    <div class="w3-half w3-margin-bottom">
+                        <label><i class="fa fa-phone"></i> Phone Number: @Model.rezPhoneNumber</label>
+                    </div>
+                    <div class="w3-half w3-margin-bottom">
+                        <label><i class="fa fa-envelope"></i> Mail: @Model.rezEmail</label>
+                    </div>
+                </div>
+
+                <div class="w3-row-padding" style="margin:0 -16px;">
+                    <div class="w3-half w3-margin-bottom">
+                        <label><i class="fa fa-calendar-o"></i> Check-in Date: @Model.rezDate?.ToString("dd/MM/yyyy")</label>
+                    </div>
+                    <div class="w3-half">
+                        <label><i class="fa fa-calendar-o"></i> Check-out Date: @Model.rezEndDate?.ToString("dd/MM/yyyy")</label>
+                    </div>
+                </div>
+
+                <div class="w3-row-padding" style="margin:0 -16px;">
+                    <div class="w3-half w3-margin-bottom">
+                        <label><i class="fa fa-male"></i> Adults: @Model.rezPerson</label>
+                    </div>
+                    <div class="w3-half">
+                        <label><i class="fa fa-child"></i> Kids: @Model.rezChild</label>
+                    </div>
+                </div>
+
+                <div class="w3-row-padding" style="margin:0 100px;color:grey">
+                    <div class=" w3-margin-bottom">
+                        <label><i class="fa fa-envelope"></i> Contact Address: info@travelnest.com</label>
+                    </div>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="/Home/Index" class="w3-button w3-dark-grey">Go to Home Page</a>
+                </div>
+
+
+@*                 <div style="text-align: center;">
+                    <a href="/Reservation/DeleteReservationIndex" class="w3-button w3-dark-grey">Delete</a>
+                </div>
+
+                <script>
+                    function confirmDelete() {
+                        var confirmDelete = confirm("Are you sure you want to delete?");
+                        if (confirmDelete) {
+                            window.location.href = "/Reservation/DeleteReservationIndex";
+                        } else {
+                            window.location.href = "/Reservation/DeleteReservationIndex";
+                        }
+                    }
+                </script> *@
+
+
+@*                 <div class="row">
+                    <input type="submit" value="Delete" onclick="confirmDelete()">
+                </div> *@
+
+
+            </form>
+        </div>
+    </div>
+</header>

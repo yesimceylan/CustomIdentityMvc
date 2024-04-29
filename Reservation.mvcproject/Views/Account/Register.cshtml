@@ -50,16 +50,27 @@
                 <input asp-for="ConfirmPassword" class="form-control" />
                 <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
             </div>
-            <div class="mb-1">
-                <label asp-for="Gender" class="control-label"></label>
-                <input asp-for="Gender" class="form-control" />
-                <span asp-validation-for="Gender" class="text-danger"></span>
-            </div>
+
             <div class="mb-1">
                 <label asp-for="Adress" class="control-label"></label>
                 <textarea asp-for="Adress" class="form-control" rows="2"></textarea>
                 <span asp-validation-for="Adress" class="text-danger"></span>
             </div>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <label asp-for="Gender"></label>
+                    <span class="text-danger">@Html.ValidationMessageFor(m => m.Gender)</span>
+                </div>
+
+                <div class="col-sm-half">
+                    <input class="w3-radio" asp-for="Gender" type="radio" value="male" checked>
+                    <label>Male</label>
+                    <input class="w3-radio" asp-for="Gender" type="radio" value="female">
+                    <label>Female</label>
+                </div>
+            </div>
+            <br />
             <div class="row">
                 <div class="col-8">
                     <a asp-action="Login" class="text-decoration-none float-start mt-2" asp-route-returnurl="@ViewData["ReturnUrl"]">Have account?</a>

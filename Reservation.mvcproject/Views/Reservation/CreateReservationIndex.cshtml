@@ -98,12 +98,33 @@
                 </div>
             </div>
 
+
             <div class="row">
                 <div class="col-25">
-                    <label for="rezPerson">Guest Count</label>
+                    <label for="rezPerson">Adults</label>
                 </div>
                 <div class="col-75">
                     <select asp-for="rezPerson">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="rezChild">Kids</label>
+                </div>
+                <div class="col-75">
+                    <select asp-for="rezChild">
+                        <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -164,6 +185,7 @@
             var phoneInput = document.getElementById("rezPhoneNumber");
             var emailInput = document.getElementById("rezEmail");
             var personInput = document.getElementById("rezPerson");
+            var personInput = document.getElementById("rezChild");
             var dateInput = document.getElementById("rezDate");
             var endDateInput = document.getElementById("rezEndDate");
 

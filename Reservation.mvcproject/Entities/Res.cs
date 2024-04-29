@@ -9,6 +9,7 @@ namespace Reservation.mvcproject.Entities
         public string? rezPhoneNumber { get; set; }
         public string? rezEmail { get; set; }
         public int? rezPerson { get; set; }
+        public int? rezChild {  get; set; }
         public string? rezDescription { get; set; }
         public DateTime? rezDate { get; set; }
         public DateTime? rezEndDate { get; set; }
