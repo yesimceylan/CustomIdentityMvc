@@ -22,7 +22,7 @@
             <h2><i class="fa fa-bed w3-margin-right">  Reservation Card</i></h2>
         </div>
         <div class="w3-container w3-white w3-padding-16">
-            <form action="/action_page.php" target="_blank">
+            <form asp-action="DeleteReservation" asp-controller="Reservation" method="post">
                 <div class="w3-row-padding" style="margin:0 -16px;">
                     <div class="w3-half w3-margin-bottom">
                         <label><i class="fa fa-ticket"></i> Reservation No: @Model.rezNumber</label>
@@ -65,31 +65,51 @@
                     </div>
                 </div>
 
-                <div style="text-align: center;">
-                    <a href="/Home/Index" class="w3-button w3-dark-grey">Go to Home Page</a>
-                </div>
-
-
-@*                 <div style="text-align: center;">
-                    <a href="/Reservation/DeleteReservationIndex" class="w3-button w3-dark-grey">Delete</a>
-                </div>
+                @*                 <a href="/Reservation/DeleteReservation" class="w3-button w3-dark-grey" onclick="confirmDelete()">Delete</a>
 
                 <script>
-                    function confirmDelete() {
-                        var confirmDelete = confirm("Are you sure you want to delete?");
-                        if (confirmDelete) {
-                            window.location.href = "/Reservation/DeleteReservationIndex";
-                        } else {
-                            window.location.href = "/Reservation/DeleteReservationIndex";
-                        }
-                    }
+                function confirmDelete() {
+                var confirmDelete = confirm("Are you sure you want to delete?");
+                if (confirmDelete) {
+                window.location.href = "/Reservation/DeleteReservationIndex";
+                } else {
+
+                }
+
+                event.preventDefault();
+                }
                 </script> *@
 
+                <a href="#" class="w3-button w3-dark-grey" onclick="confirmDelete('@Model.rezNumber')">Delete</a>
 
-@*                 <div class="row">
-                    <input type="submit" value="Delete" onclick="confirmDelete()">
-                </div> *@
+                <script>
+                    function confirmDelete(rezNumber) {
+                        var confirmDelete = confirm("Are you sure you want to delete?");
+                        if (confirmDelete) {
+                            deleteReservation(rezNumber);
+                        } else {
+                            // Silme işlemi iptal edildiğinde yapılacaklar
+                        }
 
+                        event.preventDefault();
+                    }
+
+                    function deleteReservation(rezNumber) {
+                        var xhr = new XMLHttpRequest();
+                        xhr.open("POST", "/Reservation/DeleteReservation", true);
+                        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                        xhr.onreadystatechange = function () {
+                            if (xhr.readyState === 4 && xhr.status === 200) {
+                                // Başarılı bir şekilde silindiğinde yapılacaklar
+                                window.location.href = "/Home/Index";
+                            }
+                        };
+                        xhr.send("rezNumber=" + rezNumber);
+                    }
+                </script>
+
+
+                <a href="/Home/Index" class="w3-button w3-dark-grey">Go to Home Page</a>
 
             </form>
         </div>

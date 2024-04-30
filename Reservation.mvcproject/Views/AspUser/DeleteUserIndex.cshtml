@@ -6,9 +6,11 @@
 
 <form asp-action="DeleteUser" asp-controller="AspUser" method="post">
     <div class="form-group">
-        <label asp-for="UserName">Email</label>
-        <input asp-for="UserName" class="form-control" />
-        <span class="text-danger">@Html.ValidationMessageFor(m => m.UserName)</span>
+        <div class="col-sm-4">
+            <label asp-for="UserName">Email</label>
+            <input asp-for="UserName" class="form-control" />
+            <span class="text-danger">@Html.ValidationMessageFor(m => m.UserName)</span>
+        </div>
     </div><br />
     <button type="submit" class="btn btn-primary">Delete</button>
 </form>

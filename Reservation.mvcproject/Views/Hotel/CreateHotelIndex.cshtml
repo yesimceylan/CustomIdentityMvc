@@ -35,11 +35,19 @@
                     </div>
                 </div>
 
+
+
                 <div class="row">
                     <div class="col-sm-6">
                         <label asp-for="HotelImage"></label>
                         <input asp-for="HotelImage" class="form-control" />
                         <span class="text-danger">@Html.ValidationMessageFor(m => m.HotelImage)</span>
+
+@*                         <div class="col-sm-6">
+                            <label for="hotelImage"></label>
+                            <input type="file" id="hotelImage" name="hotelImage" accept="image/*" class="form-control-file" />
+                            <span class="text-danger"> @Html.ValidationMessageFor(m => m.HotelImage)</span>
+                        </div> *@
                     </div>
 
                     <div class="col-sm-6">
@@ -63,7 +71,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-sm-3"
+                    <div class="col-sm-3">
                          <label asp-for="Price"></label>
                          <input asp-for="Price" class="form-control" />
                          <span class="text-danger">@Html.ValidationMessageFor(m => m.Price)</span></div>

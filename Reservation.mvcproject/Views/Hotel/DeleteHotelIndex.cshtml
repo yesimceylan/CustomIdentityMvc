@@ -8,10 +8,12 @@
 
 <form asp-action="DeleteHotel" asp-controller="Hotel" method="post">
     <div class="form-group">
-        <label asp-for="Id"></label>
-        <input asp-for="Id" class="form-control" />
-        <span class="text-danger">@Html.ValidationMessageFor(m => m.Id)</span>
-        <br />
-        <button type="submit" class="btn btn-primary">Delete</button>
+        <div class="col-sm-4">
+            <label asp-for="Id"></label>
+            <input asp-for="Id" class="form-control" />
+            <span class="text-danger">@Html.ValidationMessageFor(m => m.Id)</span>
+            <br />
+            <button type="submit" class="btn btn-primary">Delete</button>
+        </div>
     </div>
 </form>

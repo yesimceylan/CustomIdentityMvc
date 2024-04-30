@@ -61,12 +61,7 @@ public class HotelController : Controller
     {
         return View();
     }
-    //[HttpPost]
-    //public IActionResult SearchHotelIndex(string aa)
-    //{
-    //    var cities = _dbContext.Hotels.Select(c => c.City).ToList();
-    //    return View();
-    //}
+
     public IActionResult SearchedHotelIndex()
     {
         return View();

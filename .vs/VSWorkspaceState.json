@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Reservation.mvcproject",
+    "\\Reservation.mvcproject\\ViewModels",
+    "\\Reservation.mvcproject\\Views",
+    "\\Reservation.mvcproject\\Views\\Account"
   ],
-  "SelectedNode": "\\Reservation.mvcproject.sln",
+  "SelectedNode": "\\Reservation.mvcproject\\Views\\Account\\Login.cshtml",
   "PreviewInSolutionExplorer": false
 }
