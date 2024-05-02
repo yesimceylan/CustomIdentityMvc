@@ -24,10 +24,6 @@ namespace Reservation.mvcproject.Controllers
             Log.Information("Hotels listed.");
             return View(users);
         }
-        public IActionResult DeleteUserIndex()
-        {
-            return View();
-        }
         public IActionResult GetUserByEmailIndex()
         {
             return View();
@@ -50,10 +46,11 @@ namespace Reservation.mvcproject.Controllers
                 _dbContext.Users.Remove(userToDelete);
                 await _dbContext.SaveChangesAsync();
 
-                Log.Information($"{userToDelete.Name} kullanıcı silindi.");
-                return RedirectToAction("GetUserIndex", "AspUser");
+                Log.Information($"{userToDelete.Name} user deleted.");
             }
+            return RedirectToAction("GetUserIndex", "AspUser");
         }
+
 
         [HttpGet]
         public async Task<IActionResult> GetUserByEmail(string UserName)
@@ -111,7 +108,7 @@ namespace Reservation.mvcproject.Controllers
             await _dbContext.SaveChangesAsync();
 
             Log.Information($"{updatedUser} user updated.");
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("GetUserIndex", "AspUser");
         }
 
     }

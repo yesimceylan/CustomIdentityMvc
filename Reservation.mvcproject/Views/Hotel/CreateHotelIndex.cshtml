@@ -35,20 +35,18 @@
                     </div>
                 </div>
 
-
-
                 <div class="row">
                     <div class="col-sm-6">
                         <label asp-for="HotelImage"></label>
                         <input asp-for="HotelImage" class="form-control" />
                         <span class="text-danger">@Html.ValidationMessageFor(m => m.HotelImage)</span>
-
-@*                         <div class="col-sm-6">
-                            <label for="hotelImage"></label>
-                            <input type="file" id="hotelImage" name="hotelImage" accept="image/*" class="form-control-file" />
-                            <span class="text-danger"> @Html.ValidationMessageFor(m => m.HotelImage)</span>
-                        </div> *@
                     </div>
+
+@*                     <div class="col-sm-6">
+                        <label asp-for="HotelImage"></label>
+                        <input asp-for="HotelImage" type="file" class="form-control" />
+                        <span class="text-danger">@Html.ValidationMessageFor(m => m.HotelImage)</span>
+                    </div> *@
 
                     <div class="col-sm-6">
                         <label asp-for="HotelImage2"></label>
@@ -70,11 +68,13 @@
                     </div>
                 </div>
 
+
                 <div class="row">
                     <div class="col-sm-3">
-                         <label asp-for="Price"></label>
-                         <input asp-for="Price" class="form-control" />
-                         <span class="text-danger">@Html.ValidationMessageFor(m => m.Price)</span></div>
+                        <label asp-for="Price"></label>
+                        <input asp-for="Price" class="form-control" />
+                        <span class="text-danger">@Html.ValidationMessageFor(m => m.Price)</span>
+                    </div>
                     <div class="col-sm-3">
                         <label asp-for="PeopleCount"></label>
                         <input asp-for="PeopleCount" class="form-control" />

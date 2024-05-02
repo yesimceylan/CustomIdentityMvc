@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\yesim\\source\\repos\\test\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6DF08456-5429-423D-890F-32F1F1C74525}|Reservation.mvcproject\\Reservation.mvcproject.csproj|c:\\users\\yesim\\source\\repos\\test\\reservation.mvcproject\\views\\hotel\\gethotelindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6DF08456-5429-423D-890F-32F1F1C74525}|Reservation.mvcproject\\Reservation.mvcproject.csproj|solutionrelative:reservation.mvcproject\\views\\hotel\\gethotelindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GetHotelIndex.cshtml",
+              "DocumentMoniker": "C:\\Users\\yesim\\source\\repos\\test\\Reservation.mvcproject\\Views\\Hotel\\GetHotelIndex.cshtml",
+              "RelativeDocumentMoniker": "Reservation.mvcproject\\Views\\Hotel\\GetHotelIndex.cshtml",
+              "ToolTip": "C:\\Users\\yesim\\source\\repos\\test\\Reservation.mvcproject\\Views\\Hotel\\GetHotelIndex.cshtml",
+              "RelativeToolTip": "Reservation.mvcproject\\Views\\Hotel\\GetHotelIndex.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-02T12:19:15.731Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

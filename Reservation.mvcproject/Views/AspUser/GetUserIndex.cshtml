@@ -39,7 +39,39 @@
                                 <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> @user.Adress</p>
                             </div>
                         </div>
+
+                        <a href="/AspUser/UpdateUserIndex" class="w3-button w3-dark-grey">Update</a>
+
+                        <a href="#" class="w3-button w3-dark-grey" onclick="confirmDelete('@user.UserName')">Delete</a>
+
+                        <script>
+                            function confirmDelete(UserName) {
+                                var confirmDelete = confirm("Are you sure you want to delete?");
+                                if (confirmDelete) {
+                                    DeleteUser(UserName);
+                                } else {
+                                    // Silme işlemi iptal edildiğinde yapılacaklar
+                                }
+
+                                event.preventDefault();
+                            }
+
+                            function DeleteUser(UserName) {
+                                var xhr = new XMLHttpRequest();
+                                xhr.open("POST", "/AspUser/DeleteUser", true);
+                                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                                xhr.onreadystatechange = function () {
+                                    if (xhr.readyState === 4 && xhr.status === 200) {
+                                        // Başarılı bir şekilde silindiğinde yapılacaklar
+                                        window.location.href = "/AspUser/GetUserIndex";
+                                    }
+                                };
+                                xhr.send("UserName=" + UserName);
+                            }
+                        </script>
+
                     </div>
+
                     <hr />
                 </div>
             }
@@ -47,6 +79,7 @@
     </div>
 
 }
+
 else
 {
     <div>User not found!</div>
