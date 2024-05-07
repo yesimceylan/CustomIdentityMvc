@@ -4,20 +4,67 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Hotel List</h1>
+<h1><b>Hotel List</b></h1>
+<style>
+    body {
+        background-image: url('https://garden.spoonflower.com/c/5090068/p/f/m/3yDyWOWB4oECjSmqcc9qmveAYXj9WfizlmWcqq8S3gEqvqlo5DilMA/Light%20Gray%20Solid.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+</style>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 @{
     if (Model != null)
     {
         foreach (var hotels in Model)
         {
             <ul>
-                <div>
-                <li>
-                    <b>@hotels?.HotelName</b><br />
-                        @hotels?.City / @hotels?.Location
-                </li>
+                <div class="w3-panel">
+                    <div class="w3-row-padding" style="margin:0 -16px">
+                        <div class="w3-third">
+                            <h5>@hotels.HotelName</h5>
+                            <img src="@hotels.HotelImage" style="width:100%; height:233px; object-fit: cover;">
+                        </div>
+                        <div class="w3-twothird">
+                            <br /><br />
+                            <table class="w3-table w3-striped w3-white">
+                                <tr>
+                                    <td><i class="fa fa-location-arrow w3-text-darkgrey w3-large"></i></td>
+                                    <td>@hotels.City / @hotels.Location</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-star-o w3-text-yellow w3-large"></i></td>
+                                    <td>@hotels.StarRating</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-money w3-text-green w3-large"></i></td>
+                                    <td>From @hotels.Price</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-users w3-text-purple w3-large"></i></td>
+                                    <td>Max. @hotels.PeopleCount Visitor</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-sign-in w3-text-blue w3-large"></i></td>
+                                    <td>After @hotels.CheckIn PM</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-sign-out w3-text-pink w3-large"></i></td>
+                                    <td>@hotels.CheckOut PM</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-                <br />
             </ul>
 
         }
@@ -28,4 +75,3 @@
     }
 
 }
-
