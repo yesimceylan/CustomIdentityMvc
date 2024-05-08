@@ -108,3 +108,95 @@
 2024-05-07 13:25:03.263 +03:00 [INF] Hotels listed.
 2024-05-07 13:25:10.287 +03:00 [INF] Hotels listed.
 2024-05-07 13:25:20.065 +03:00 [INF] Hotels listed.
+2024-05-07 13:29:40.964 +03:00 [INF] Hotels listed.
+2024-05-07 13:57:41.697 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 13:58:28.989 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 14:00:30.339 +03:00 [INF] Hotels listed.
+2024-05-07 14:00:52.397 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 14:01:01.804 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 14:01:17.531 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 14:01:33.124 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 14:01:44.759 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 14:01:55.475 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 14:02:03.957 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 14:02:16.349 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 14:02:25.960 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 14:03:04.260 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 14:03:13.020 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 14:03:23.924 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 14:03:32.174 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 14:03:41.263 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 14:04:20.416 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 14:04:58.628 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 14:05:20.420 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 14:05:30.003 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 14:06:18.536 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 14:06:27.259 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 14:06:35.260 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 14:06:44.568 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 14:06:53.553 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 14:07:01.319 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 14:07:09.927 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 14:07:32.162 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 14:07:42.950 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 14:07:59.549 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 14:08:08.472 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 14:08:17.908 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 14:12:17.631 +03:00 [INF] Hotels listed.
+2024-05-07 14:13:02.032 +03:00 [INF] Hotels listed.
+2024-05-07 15:48:32.596 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 15:48:44.889 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 15:49:00.379 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 15:49:10.769 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 15:49:21.718 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 15:49:30.779 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 15:49:41.562 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 15:49:50.690 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 15:50:01.431 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 15:50:09.846 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 15:50:18.802 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 15:50:29.766 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 15:50:40.184 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 15:50:50.353 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 15:50:58.321 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 15:51:08.875 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 15:51:18.294 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 15:51:32.903 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 15:51:45.220 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 15:51:58.577 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 15:52:08.263 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 15:52:30.479 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 15:52:40.336 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 15:52:51.509 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 15:53:00.699 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 15:53:09.509 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 15:53:18.887 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 15:53:30.419 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 15:53:43.693 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 15:53:55.564 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 15:54:06.606 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 15:54:14.791 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-07 16:19:48.187 +03:00 [INF] 618b854c-1723-43ef-8cd2-08dc6e985e8a new reservation registration.
+2024-05-07 16:19:48.246 +03:00 [INF] RV738095 / added new reservation.
+2024-05-07 16:21:14.561 +03:00 [INF] b02cfdcc-5e7a-4f21-8cd3-08dc6e985e8a new reservation registration.
+2024-05-07 16:21:14.562 +03:00 [INF] RV761862 / added new reservation.
+2024-05-07 16:27:20.597 +03:00 [INF] Reservation Number: RV595135 to be viewed.
+2024-05-07 16:27:41.683 +03:00 [INF] Reservation Number: RV456289 to be viewed.
+2024-05-07 16:27:52.332 +03:00 [INF] Reservation Number: RV210797 to be viewed.
+2024-05-07 16:27:58.196 +03:00 [INF] Reservation Number: RV151828 to be viewed.
+2024-05-07 16:28:03.805 +03:00 [INF] Reservation Number: RV414860 to be viewed.
+2024-05-07 16:28:10.459 +03:00 [INF] Reservation Number: RV408479 to be viewed.
+2024-05-07 16:28:15.983 +03:00 [INF] Reservation Number: RV274035 to be viewed.
+2024-05-07 16:28:22.352 +03:00 [INF] Reservation Number: RV363583 to be viewed.
+2024-05-07 16:28:30.797 +03:00 [INF] Reservation Number: RV817044 to be viewed.
+2024-05-07 16:28:37.734 +03:00 [INF] Reservation Number: RV933459 to be viewed.
+2024-05-07 16:28:47.412 +03:00 [INF] Reservation Number: RV738095 to be viewed.
+2024-05-07 16:28:56.231 +03:00 [INF] Reservation Number: RV761862 to be viewed.
+2024-05-07 16:54:04.091 +03:00 [INF] 700f26ed-99d4-4b9a-6412-08dc6e9d27f3 new reservation registration.
+2024-05-07 16:54:04.144 +03:00 [INF] RV523011 / added new reservation.
+2024-05-07 16:55:57.622 +03:00 [INF] 120077d4-d72c-4e7c-6413-08dc6e9d27f3 new reservation registration.
+2024-05-07 16:55:57.624 +03:00 [INF] RV571921 / added new reservation.
+2024-05-07 17:11:03.021 +03:00 [INF] 102bd703-78ee-4f3b-01f7-08dc6e9f874b new reservation registration.
+2024-05-07 17:11:03.084 +03:00 [INF] RV275312 / added new reservation.
+2024-05-07 17:21:55.921 +03:00 [INF] 57487c73-6a53-497e-f622-08dc6ea10c6e new reservation registration.
+2024-05-07 17:21:55.980 +03:00 [INF] RV578240 / added new reservation.

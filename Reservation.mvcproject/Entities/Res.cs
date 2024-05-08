@@ -3,8 +3,7 @@
 namespace Reservation.mvcproject.Entities
 {
     public class Res : BaseEntity
-    {
-     
+    {     
         public string? rezName { get; set; }
         public string? rezPhoneNumber { get; set; }
         public string? rezEmail { get; set; }
@@ -19,5 +18,6 @@ namespace Reservation.mvcproject.Entities
         [ForeignKey("HotelId")]
         public Hotel Hotel { get; set; }
         public string? rezNumber { get; set; }
+        public decimal? priceToPay { get; set; }
     }
 }

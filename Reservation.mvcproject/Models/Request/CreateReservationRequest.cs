@@ -13,5 +13,6 @@
         public DateTime rezEndDate { get; set; }
         public DateTime rezCreateDate { get; set; } = DateTime.Now;
         public Guid HotelId { get; set; }
+        public decimal? priceToPay { get; set; }
     }
 }

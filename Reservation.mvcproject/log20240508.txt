@@ -1,0 +1,13 @@
+2024-05-08 21:02:45.317 +03:00 [INF] 18e69056-23ea-4105-58bf-08dc6f89102b new reservation registration.
+2024-05-08 21:02:45.349 +03:00 [INF] RV278119 / added new reservation.
+2024-05-08 21:03:25.589 +03:00 [INF] 5c8639ec-a80f-49fd-58c0-08dc6f89102b new reservation registration.
+2024-05-08 21:03:25.590 +03:00 [INF] RV887276 / added new reservation.
+2024-05-08 21:09:54.859 +03:00 [INF] 8781e477-7bb3-4dd4-58c1-08dc6f89102b new reservation registration.
+2024-05-08 21:09:55.428 +03:00 [INF] RV164057 / added new reservation.
+2024-05-08 21:11:57.031 +03:00 [INF] 259beb8e-5e14-4cec-2060-08dc6f8a58f0 new reservation registration.
+2024-05-08 21:11:57.083 +03:00 [INF] RV839740 / added new reservation.
+2024-05-08 21:13:21.314 +03:00 [INF] 0f334809-1766-46d1-2061-08dc6f8a58f0 new reservation registration.
+2024-05-08 21:13:21.315 +03:00 [INF] RV606888 / added new reservation.
+2024-05-08 22:18:14.505 +03:00 [INF] 64c01e3f-59b4-4414-3259-08dc6f939bb0 new reservation registration.
+2024-05-08 22:18:14.558 +03:00 [INF] RV271986 / added new reservation.
+2024-05-08 22:26:00.772 +03:00 [INF] Hotels listed.

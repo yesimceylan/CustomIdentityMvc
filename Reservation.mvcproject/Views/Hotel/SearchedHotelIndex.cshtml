@@ -38,7 +38,7 @@
                 <img src="@hotel.HotelImage" alt="Norway" style="width:100%; height:275px;">
                 <div class="w3-container w3-white">
                     <h3> <a href="@Url.Action("HotelDetailsIndex","Hotel",new{id=@hotel.Id})">@hotel.HotelName</a></h3>
-                    <h6 class="w3-opacity">From @hotel.Price</h6>
+                    <h6 class="w3-opacity">From $@hotel.Price</h6>
                     <p>@hotel.Location</p>
                     <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i></p>
 

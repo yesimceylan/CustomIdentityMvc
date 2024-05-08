@@ -4,6 +4,9 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+@{
+    var perPersonPrice = ViewBag.perPersonPrice;
+}
 <!DOCTYPE html>
 <html>
 <head>
@@ -104,17 +107,8 @@
                     <label for="rezPerson">Adults</label>
                 </div>
                 <div class="col-75">
-                    <select asp-for="rezPerson">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                    </select>
+                    <input type="number" id="adults" min="1" value="1" asp-for="rezPerson">
+                    <br>
                 </div>
             </div>
 
@@ -123,18 +117,8 @@
                     <label for="rezChild">Kids</label>
                 </div>
                 <div class="col-75">
-                    <select asp-for="rezChild">
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                    </select>
+                    <input type="number" id="children" min="0" value="0" asp-for="rezChild">
+                    <br>
                 </div>
             </div>
 
@@ -170,8 +154,42 @@
                     <input asp-for="HotelId" class="form-control" style="display: none;">
                 </div>
             </div>
-
             <br>
+
+
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Reservation Page</title>
+            </head>
+            <body>
+                <p>Total Price: <span id="totalPrice">0</span></p>
+
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <script>
+                    $(document).ready(function () {
+                        $('#adults, #children').change(function () {
+                            var adults = parseInt($('#adults').val());
+                            var children = parseInt($('#children').val());
+                            var priceToPay = calculateTotalPrice(adults, children);
+
+                            $('#totalPrice').text(priceToPay);
+                        });
+                        var perPersonPrice = parseFloat('@ViewBag.PerPersonPrice');
+                        function calculateTotalPrice(adults, children) {
+                            var adultPrice = perPersonPrice;
+                            var childPrice = adultPrice * 0.5;
+
+                            // Toplam fiyatı hesapla
+                            var priceToPay = (adults * adultPrice) + (children * childPrice);
+
+                            return priceToPay;
+                        }
+                    });
+                </script>
+            </body>
+
             <div class="row">
                 <input type="submit" value="Create" onclick="handleCreateButtonClick()">
             </div>
@@ -221,6 +239,4 @@
             }
         });
     </script>
-
-    A
 </body>

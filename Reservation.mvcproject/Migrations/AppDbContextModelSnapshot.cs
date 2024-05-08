@@ -206,8 +206,8 @@ namespace Reservation.mvcproject.Migrations
                     b.Property<string>("PeopleCount")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Price")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<decimal?>("Price")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<bool>("Shower")
                         .HasColumnType("bit");
@@ -234,6 +234,9 @@ namespace Reservation.mvcproject.Migrations
 
                     b.Property<Guid>("HotelId")
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<decimal?>("priceToPay")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<int?>("rezChild")
                         .HasColumnType("int");

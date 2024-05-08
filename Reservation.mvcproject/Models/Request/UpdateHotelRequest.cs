@@ -11,7 +11,7 @@
         public string? HotelImage2 { get; set; }
         public string? HotelImage3 { get; set; }
         public string? HotelImage4 { get; set; }
-        public string? Price { get; set; }
+        public decimal? Price { get; set; }
         public string? PeopleCount { get; set; }
         public string? Bathrooms { get; set; }
         public string? Bedrooms { get; set; }

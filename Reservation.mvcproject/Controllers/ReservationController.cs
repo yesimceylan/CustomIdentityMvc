@@ -24,6 +24,8 @@ namespace Reservation.mvcproject.Controllers
 
         public IActionResult CreateReservationIndex(Guid HotelId)
         {
+            decimal adultPrice = (decimal)(_dbContext.Hotels.Find(HotelId)?.Price);
+            ViewBag.perPersonPrice = adultPrice.ToString();
             return View();
         }
         public IActionResult ReservationDetailIndex()
@@ -60,26 +62,34 @@ namespace Reservation.mvcproject.Controllers
                 HotelId = res.HotelId,
                 rezNumber = resNumber
             };
-            //int? payment = 0;
-            //for (int i = 1; i <= res.rezPerson; i++)
-            //{
-            //    var hotel = await _dbContext.Hotels.FindAsync(res.HotelId);
-            //    if (hotel != null)
-            //    {
-            //        payment += hotel.Price;
-            //    }
-            //}
-            //if(res.rezChild!=0)
-            //{
-            //    for(int j=1;j<=res.rezChild;j++)
-            //    {
-            //        var hotel = await _dbContext.Hotels.FindAsync(res.HotelId);
-            //        if (hotel != null)
-            //        {
-            //            payment += ((hotel.Price) / 2);
-            //        }
-            //    }
-            //}
+            newres.priceToPay = 0;
+            TimeSpan duration = res.rezEndDate - res.rezDate;
+            int numberOfDays = duration.Days;
+            for (int x = 1; x <= numberOfDays; x++)
+            {
+                for (int i = 1; i <= res.rezPerson; i++)
+                {
+                    var hotel = await _dbContext.Hotels.FindAsync(res.HotelId);
+                    if (hotel != null)
+                    {
+                        newres.priceToPay += hotel.Price;
+                    }
+                }
+            }
+            for (int x = 1; x <= numberOfDays; x++)
+            {
+                if (res.rezChild != 0)
+                {
+                    for (int j = 1; j <= res.rezChild; j++)
+                    {
+                        var hotel = await _dbContext.Hotels.FindAsync(res.HotelId);
+                        if (hotel != null)
+                        {
+                            newres.priceToPay += ((hotel.Price) / 2);
+                        }
+                    }
+                }
+            }
 
             await _dbContext.Reservations.AddAsync(newres);
             await _dbContext.SaveChangesAsync();
