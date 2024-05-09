@@ -101,6 +101,23 @@
                 </div>
             </div>
 
+                        <div class="row">
+                <div class="col-25">
+                    <label for="rezDate">Entry Date</label>
+                </div>
+                <div class="col-75">
+                    <input asp-for="rezDate" required class="form-control" type="date" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="rezEndDate">Release Date</label>
+                </div>
+                <div class="col-75">
+                    <input asp-for="rezEndDate" required class="form-control" type="date" />
+                </div>
+            </div>
 
             <div class="row">
                 <div class="col-25">
@@ -119,24 +136,6 @@
                 <div class="col-75">
                     <input type="number" id="children" min="0" value="0" asp-for="rezChild">
                     <br>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-25">
-                    <label for="rezDate">Entry Date</label>
-                </div>
-                <div class="col-75">
-                    <input asp-for="rezDate" required class="form-control" type="date" />
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-25">
-                    <label for="rezEndDate">Release Date</label>
-                </div>
-                <div class="col-75">
-                    <input asp-for="rezEndDate" required class="form-control" type="date" />
                 </div>
             </div>
 
@@ -164,7 +163,7 @@
                 <title>Reservation Page</title>
             </head>
             <body>
-                <p>Total Price: <span id="totalPrice">0</span></p>
+                <p>Total Price: <span id="totalPrice">@ViewBag.PerPersonPrice</span></p>
 
                 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
                 <script>
@@ -181,8 +180,7 @@
                             var adultPrice = perPersonPrice;
                             var childPrice = adultPrice * 0.5;
 
-                            // Toplam fiyatı hesapla
-                            var priceToPay = (adults * adultPrice) + (children * childPrice);
+                            priceToPay = (adults * adultPrice) + (children * childPrice);
 
                             return priceToPay;
                         }
