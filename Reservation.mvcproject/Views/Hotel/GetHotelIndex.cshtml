@@ -26,7 +26,10 @@
                     <div class="w3-row-padding" style="margin:0 -16px">
                         <div class="w3-third">
                             <h5>@hotels.HotelName</h5>
-                            <img src="@hotels.HotelImage" style="width:100%; height:233px; object-fit: cover;">
+                            <a href="@Url.Action("HotelDetailsIndex", "Hotel",new{id=@hotels.Id})">
+                                <img src="@hotels.HotelImage" style="width:100%; height:233px; object-fit: cover;" />
+                            </a>
+
                         </div>
                         <div class="w3-twothird">
                             <br /><br />
@@ -73,5 +76,6 @@
     {
         <div>Hotel not found !</div>
     }
+    <br />
 
 }

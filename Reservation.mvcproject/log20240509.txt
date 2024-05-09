@@ -50,3 +50,27 @@
 2024-05-09 11:18:58.168 +03:00 [INF] Reservation Number: RV327857 to be viewed.
 2024-05-09 11:19:25.464 +03:00 [INF] c41960b9-db0f-4fe7-75da-08dc7000bd0d new reservation registration.
 2024-05-09 11:19:25.467 +03:00 [INF] RV461431 / added new reservation.
+2024-05-09 14:00:26.936 +03:00 [INF] Hotels listed.
+2024-05-09 14:01:27.652 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-09 14:01:35.404 +03:00 [INF] Hotels listed.
+2024-05-09 14:02:10.658 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-09 14:02:42.546 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-09 14:03:17.950 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-09 14:03:19.322 +03:00 [INF] Hotels listed.
+2024-05-09 14:04:09.910 +03:00 [INF] Hotels listed.
+2024-05-09 14:04:19.163 +03:00 [INF] Hotels listed.
+2024-05-09 14:06:39.364 +03:00 [INF] Hotels listed.
+2024-05-09 14:10:35.930 +03:00 [INF] Hotels listed.
+2024-05-09 14:18:38.301 +03:00 [INF] Hotels listed.
+2024-05-09 14:19:16.631 +03:00 [INF] Hotels listed.
+2024-05-09 14:19:58.928 +03:00 [INF] Hotels listed.
+2024-05-09 14:21:06.117 +03:00 [INF] Hotels listed.
+2024-05-09 14:21:55.217 +03:00 [INF] Hotels listed.
+2024-05-09 14:24:08.553 +03:00 [INF] Hotels listed.
+2024-05-09 14:25:34.996 +03:00 [INF] Hotels listed.
+2024-05-09 14:37:09.142 +03:00 [INF] Hotels listed.
+2024-05-09 14:42:30.789 +03:00 [INF] Hotels listed.
+2024-05-09 14:45:10.763 +03:00 [INF] Hotels listed.
+2024-05-09 14:47:45.961 +03:00 [INF] Hotels listed.
+2024-05-09 14:48:17.382 +03:00 [INF] Hotels listed.
+2024-05-09 14:49:28.436 +03:00 [INF] Hotels listed.
