@@ -16,6 +16,7 @@ using System.Drawing;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using Microsoft.EntityFrameworkCore.Query.Internal;
+using System.Security.Cryptography;
 
 
 namespace Reservation.mvcproject.Controllers;
@@ -40,10 +41,10 @@ public class HotelController : Controller
         return View();
     }
     
-    public IActionResult DeleteHotelIndex()
-    {
-        return View();
-    }
+    //public IActionResult DeleteHotelIndex()
+    //{
+    //    return View();
+    //}
     
     public IActionResult GetHotelIndex()
     {
@@ -133,15 +134,29 @@ public class HotelController : Controller
     [HttpPost]
     public async Task<IActionResult> DeleteHotel(Guid id)
     {
-        var hotel = await _dbContext.Hotels.FindAsync(id);
+        //var hotel = await _dbContext.Hotels.FindAsync(id);
+        //if (hotel == null)
+        //{
+        //    NotFound();
+        //}
+        //_dbContext.Hotels.Remove(hotel);
+        //await _dbContext.SaveChangesAsync();
+        //Log.Information($"Hotel Name: {hotel.HotelName} id:{hotel.Id} is deleted.");
+        //return RedirectToAction("Index", "Home");
+        var hotel = await _dbContext.Hotels.FirstOrDefaultAsync(u => u.Id == id);
         if (hotel == null)
         {
-            NotFound();
+            Log.Information("Hotel not found during deletion!");
+            return NotFound();
         }
-        _dbContext.Hotels.Remove(hotel);
-        await _dbContext.SaveChangesAsync();
-        Log.Information($"Hotel Name: {hotel.HotelName} id:{hotel.Id} is deleted.");
-        return RedirectToAction("Index", "Home");
+        else
+        {
+            _dbContext.Hotels.Remove(hotel);
+            await _dbContext.SaveChangesAsync();
+
+            Log.Information($"{hotel.HotelName} user deleted.");
+        }
+        return RedirectToAction("GetHotelIndex", "Hotel");
     }
 
     [HttpPost]
@@ -248,7 +263,7 @@ public class HotelController : Controller
         await _dbContext.SaveChangesAsync();
 
         Log.Information($"{updatedHotel} user updated.");
-        return RedirectToAction("Index", "Home");
+        return RedirectToAction("GetHotelIndex", "Hotel");
     }
 
 

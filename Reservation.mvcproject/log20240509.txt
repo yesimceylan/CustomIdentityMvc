@@ -74,3 +74,41 @@
 2024-05-09 14:47:45.961 +03:00 [INF] Hotels listed.
 2024-05-09 14:48:17.382 +03:00 [INF] Hotels listed.
 2024-05-09 14:49:28.436 +03:00 [INF] Hotels listed.
+2024-05-09 14:57:05.882 +03:00 [INF] Hotels listed.
+2024-05-09 14:57:22.032 +03:00 [INF] Hotels listed.
+2024-05-09 14:57:32.924 +03:00 [INF] Hotels listed.
+2024-05-09 14:57:40.809 +03:00 [INF] Hotels listed.
+2024-05-09 15:00:48.805 +03:00 [INF] Reservation Number: RV461431 to be viewed.
+2024-05-09 15:33:36.335 +03:00 [INF] Reservation Number: RV461431 to be viewed.
+2024-05-09 15:42:10.278 +03:00 [INF] Hotels listed.
+2024-05-09 15:43:12.414 +03:00 [INF] Hotels listed.
+2024-05-09 15:45:18.514 +03:00 [INF] Hotels listed.
+2024-05-09 15:47:09.369 +03:00 [INF] Hotels listed.
+2024-05-09 15:47:19.457 +03:00 [INF] Hotels listed.
+2024-05-09 15:47:22.517 +03:00 [INF] Hotels listed.
+2024-05-09 15:49:20.748 +03:00 [INF] Hotels listed.
+2024-05-09 15:49:38.053 +03:00 [INF] Hotels listed.
+2024-05-09 15:50:25.024 +03:00 [INF] Hotels listed.
+2024-05-09 15:50:44.156 +03:00 [INF] Hotels listed.
+2024-05-09 16:00:15.665 +03:00 [INF] Hotels listed.
+2024-05-09 16:01:20.824 +03:00 [INF] Hotels listed.
+2024-05-09 16:01:51.223 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-09 16:01:51.233 +03:00 [INF] Hotels listed.
+2024-05-09 16:04:01.154 +03:00 [INF] Hotels listed.
+2024-05-09 16:04:05.887 +03:00 [INF] Likya Adrasan Otel user deleted.
+2024-05-09 16:04:05.893 +03:00 [INF] Hotels listed.
+2024-05-09 16:04:05.907 +03:00 [INF] Hotels listed.
+2024-05-09 16:05:36.255 +03:00 [INF] Hotels listed.
+2024-05-09 16:05:45.852 +03:00 [INF] Sarp Otel Kadriye user deleted.
+2024-05-09 16:05:45.862 +03:00 [INF] Hotels listed.
+2024-05-09 16:05:45.880 +03:00 [INF] Hotels listed.
+2024-05-09 16:42:16.105 +03:00 [INF] Hotels listed.
+2024-05-09 16:42:21.643 +03:00 [INF] Soykan Saydam user deleted.
+2024-05-09 16:42:21.651 +03:00 [INF] Hotels listed.
+2024-05-09 16:42:21.663 +03:00 [INF] Hotels listed.
+2024-05-09 16:45:05.142 +03:00 [INF] Hotels listed.
+2024-05-09 16:46:29.091 +03:00 [INF] Reservation Number: RV461431 to be viewed.
+2024-05-09 16:48:30.352 +03:00 [INF] Reservation Number: RV461431 to be viewed.
+2024-05-09 17:56:30.080 +03:00 [INF] Hotels listed.
+2024-05-09 17:56:31.699 +03:00 [INF] Hotels listed.
+2024-05-09 18:09:19.980 +03:00 [INF] Hotels listed.
