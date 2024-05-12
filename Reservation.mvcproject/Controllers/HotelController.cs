@@ -17,6 +17,7 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using Microsoft.EntityFrameworkCore.Query.Internal;
 using System.Security.Cryptography;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 
 namespace Reservation.mvcproject.Controllers;
@@ -36,16 +37,12 @@ public class HotelController : Controller
         return View();
     }
     
-    public IActionResult UpdateHotelIndex()
+    public IActionResult UpdateHotelIndex(Guid id)
     {
+        ViewBag.HotelId = id;
         return View();
     }
-    
-    //public IActionResult DeleteHotelIndex()
-    //{
-    //    return View();
-    //}
-    
+
     public IActionResult GetHotelIndex()
     {
         var hotels = _dbContext.Hotels.ToList();

@@ -1,0 +1,12 @@
+2024-05-11 18:21:19.019 +03:00 [INF] Hotels listed.
+2024-05-11 18:21:30.173 +03:00 [INF] Hotels listed.
+2024-05-11 18:29:51.052 +03:00 [INF] Hotels listed.
+2024-05-11 18:30:47.125 +03:00 [INF] Hotels listed.
+2024-05-11 18:35:00.471 +03:00 [INF] Hotels listed.
+2024-05-11 18:36:20.438 +03:00 [INF] Hotels listed.
+2024-05-11 18:37:59.565 +03:00 [INF] Hotels listed.
+2024-05-11 18:39:02.936 +03:00 [INF] Hotels listed.
+2024-05-11 18:43:07.611 +03:00 [INF] Hotels listed.
+2024-05-11 18:46:04.423 +03:00 [INF] Hotels listed.
+2024-05-11 18:46:26.841 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-11 18:46:26.867 +03:00 [INF] Hotels listed.

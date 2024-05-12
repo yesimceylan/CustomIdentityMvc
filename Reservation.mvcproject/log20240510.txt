@@ -4,3 +4,75 @@
 2024-05-10 14:02:50.946 +03:00 [INF] Reservation Number: RV461431 to be viewed.
 2024-05-10 14:04:38.281 +03:00 [INF] Reservation Number: RV461431 to be viewed.
 2024-05-10 14:06:27.903 +03:00 [INF] Reservation Number: RV461431 to be viewed.
+2024-05-10 14:09:18.249 +03:00 [INF] Hotels listed.
+2024-05-10 14:09:21.587 +03:00 [INF] Hotels listed.
+2024-05-10 14:09:24.504 +03:00 [INF] Hotels listed.
+2024-05-10 14:09:29.749 +03:00 [INF] Hotels listed.
+2024-05-10 14:09:31.376 +03:00 [INF] Hotels listed.
+2024-05-10 14:10:24.613 +03:00 [INF] Hotels listed.
+2024-05-10 14:10:29.830 +03:00 [INF] Hotels listed.
+2024-05-10 14:10:41.143 +03:00 [INF] Hotels listed.
+2024-05-10 14:10:48.744 +03:00 [INF] Hotels listed.
+2024-05-10 14:11:12.550 +03:00 [INF] Hotels listed.
+2024-05-10 14:11:14.673 +03:00 [INF] Hotels listed.
+2024-05-10 14:11:36.783 +03:00 [INF] Hotels listed.
+2024-05-10 14:11:45.003 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-05-10 14:12:16.452 +03:00 [INF] HotelId: 72329c32-530c-48b8-c325-08dc5d45816e to be viewed.
+2024-05-10 14:12:26.432 +03:00 [INF] Hotels listed.
+2024-05-10 14:12:33.762 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-05-10 14:12:43.673 +03:00 [INF] Hotels listed.
+2024-05-10 14:12:52.799 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-05-10 14:12:57.257 +03:00 [INF] Hotels listed.
+2024-05-10 14:13:17.167 +03:00 [INF] User with maill adress yesimceylan7@icloud.com is listed.
+2024-05-10 14:14:18.902 +03:00 [INF] Reservation Number: RV461431 to be viewed.
+2024-05-10 14:15:42.766 +03:00 [INF] HotelId: b540fcfe-811c-4c8a-c323-08dc5d45816e to be viewed.
+2024-05-10 14:16:21.839 +03:00 [INF] Hotels listed.
+2024-05-10 14:16:56.183 +03:00 [INF] HotelId: b540fcfe-811c-4c8a-c323-08dc5d45816e to be viewed.
+2024-05-10 14:17:02.664 +03:00 [INF] Hotels listed.
+2024-05-10 14:17:08.044 +03:00 [INF] Hotels listed.
+2024-05-10 14:18:33.649 +03:00 [INF] Hotels listed.
+2024-05-10 14:18:38.992 +03:00 [INF] Hotels listed.
+2024-05-10 14:20:16.625 +03:00 [INF] Hotels listed.
+2024-05-10 14:20:44.472 +03:00 [INF] Hotels listed.
+2024-05-10 14:22:07.355 +03:00 [INF] Hotels listed.
+2024-05-10 14:23:22.817 +03:00 [INF] Hotels listed.
+2024-05-10 14:33:31.900 +03:00 [INF] Hotels listed.
+2024-05-10 14:33:46.589 +03:00 [INF] Hotels listed.
+2024-05-10 14:41:49.212 +03:00 [INF] Hotels listed.
+2024-05-10 14:41:57.455 +03:00 [INF] Hotels listed.
+2024-05-10 14:44:19.826 +03:00 [INF] Hotels listed.
+2024-05-10 14:46:26.045 +03:00 [INF] Hotels listed.
+2024-05-10 14:46:39.777 +03:00 [INF] Hotels listed.
+2024-05-10 14:53:58.696 +03:00 [INF] Hotels listed.
+2024-05-10 14:54:57.275 +03:00 [INF] Reservation Number: RV461431 to be viewed.
+2024-05-10 14:55:02.910 +03:00 [INF] Reservation Number: RV461431 to be viewed.
+2024-05-10 14:55:09.010 +03:00 [INF] Reservation Number: RV461431 to be viewed.
+2024-05-10 15:18:47.849 +03:00 [INF] Hotels listed.
+2024-05-10 15:27:38.148 +03:00 [INF] Hotels listed.
+2024-05-10 15:28:00.238 +03:00 [INF] Hotels listed.
+2024-05-10 15:29:19.094 +03:00 [INF] Hotels listed.
+2024-05-10 15:29:32.928 +03:00 [INF] Hotels listed.
+2024-05-10 15:37:57.639 +03:00 [INF] Hotels listed.
+2024-05-10 15:38:40.771 +03:00 [INF] Hotels listed.
+2024-05-10 15:40:26.360 +03:00 [INF] Hotels listed.
+2024-05-10 15:45:39.623 +03:00 [INF] Hotels listed.
+2024-05-10 15:46:48.588 +03:00 [INF] Hotels listed.
+2024-05-10 15:55:14.974 +03:00 [INF] Hotels listed.
+2024-05-10 17:33:05.329 +03:00 [INF] Hotels listed.
+2024-05-10 17:43:37.772 +03:00 [INF] Hotels listed.
+2024-05-10 17:43:41.510 +03:00 [INF] Hotels listed.
+2024-05-10 17:43:58.172 +03:00 [INF] Hotels listed.
+2024-05-10 17:45:14.949 +03:00 [INF] Hotels listed.
+2024-05-10 17:45:27.057 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-10 17:45:27.073 +03:00 [INF] Hotels listed.
+2024-05-10 17:47:37.572 +03:00 [INF] Hotels listed.
+2024-05-10 17:48:49.014 +03:00 [INF] Hotels listed.
+2024-05-10 17:49:36.769 +03:00 [INF] Hotels listed.
+2024-05-10 17:49:48.725 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-10 17:49:48.809 +03:00 [INF] Hotels listed.
+2024-05-10 17:51:30.501 +03:00 [INF] Hotels listed.
+2024-05-10 17:51:53.211 +03:00 [INF] Hotels listed.
+2024-05-10 17:53:12.288 +03:00 [INF] Hotels listed.
+2024-05-10 17:55:06.420 +03:00 [INF] Hotels listed.
+2024-05-10 17:55:35.801 +03:00 [INF] Hotels listed.
+2024-05-10 17:55:52.590 +03:00 [INF] Hotels listed.

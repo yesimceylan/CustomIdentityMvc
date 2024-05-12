@@ -13,7 +13,7 @@
                 <div class="row">
                     <div class="form-group">
                         <label asp-for="Id"></label>
-                        <input asp-for="Id" required class="form-control" />
+                        <input asp-for="Id" readonly value="@ViewBag.HotelId" class="form-control" />
                         <span class="text-danger">@Html.ValidationMessageFor(m => m.Id)</span>
                     </div>
                     <div class="col-sm-3">
