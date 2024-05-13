@@ -106,7 +106,7 @@
                     <label for="rezDate">Entry Date</label>
                 </div>
                 <div class="col-75">
-                    <input asp-for="rezDate" required class="form-control" type="date" />
+                    <input id="rezDate" asp-for="rezDate" required class="form-control" type="date" />
                 </div>
             </div>
 
@@ -115,7 +115,7 @@
                     <label for="rezEndDate">Release Date</label>
                 </div>
                 <div class="col-75">
-                    <input asp-for="rezEndDate" required class="form-control" type="date" />
+                    <input id="rezEndDate" asp-for="rezEndDate" required class="form-control" type="date" />
                 </div>
             </div>
 
@@ -156,31 +156,46 @@
             <br>
 
 
-            <html lang="en">
             <head>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Reservation Page</title>
             </head>
             <body>
-                <p>Total Price: <span id="totalPrice">@ViewBag.PerPersonPrice</span></p>
+                <p>Total Price: <span id="totalPrice"></span></p>
 
                 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
                 <script>
                     $(document).ready(function () {
-                        $('#adults, #children').change(function () {
+                        $('#adults, #children, #rezDate, #rezEndDate').change(function () {
                             var adults = parseInt($('#adults').val());
                             var children = parseInt($('#children').val());
-                            var priceToPay = calculateTotalPrice(adults, children);
+                            var rezDateVal = $('#rezDate').val();
+                            var rezEndDateVal = $('#rezEndDate').val();
 
-                            $('#totalPrice').text(priceToPay);
+
+                            if (adults  && rezDateVal && rezEndDateVal) {
+                                var rezDate = new Date(rezDateVal);
+                                var rezEndDate = new Date(rezEndDateVal);
+                                var priceToPay = calculateTotalPrice(adults, children, rezDate, rezEndDate);
+
+
+                                $('#totalPrice').text(priceToPay);
+                            } else {
+
+                                $('#totalPrice').text('');
+                            }
                         });
+
                         var perPersonPrice = parseFloat('@ViewBag.PerPersonPrice');
-                        function calculateTotalPrice(adults, children) {
+                        function calculateTotalPrice(adults, children, rezDate, rezEndDate) {
                             var adultPrice = perPersonPrice;
                             var childPrice = adultPrice * 0.5;
+                            var difference = rezEndDate.getTime() - rezDate.getTime();
+                            var daysDifference = Math.floor(difference / (1000 * 60 * 60 * 24));
 
-                            priceToPay = (adults * adultPrice) + (children * childPrice);
+                            priceToPay = (adults * adultPrice) + (children * childPrice) ;
+                            priceToPay *= daysDifference;
 
                             return priceToPay;
                         }

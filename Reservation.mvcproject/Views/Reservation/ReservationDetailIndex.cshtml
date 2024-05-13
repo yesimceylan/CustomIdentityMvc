@@ -59,20 +59,29 @@
                     </div>
                 </div>
 
+                <div class="w3-row-padding" style="margin:0 -10px;">
+                    <label><i class="fa fa-money"></i> Price: @Model.priceToPay$</label>
+                </div>
+
+                <br />
                 <div class="w3-row-padding" style="margin:0 100px;color:grey">
                     <div class=" w3-margin-bottom">
                         <label><i class="fa fa-envelope"></i> Contact Address: info@travelnest.com</label>
                     </div>
                 </div>
 
-                <div style="text-align: center;">
-                    <a href="@Url.Action("Index", "Home")" class="w3-button w3-dark-grey">Go Home Page</a>
-                </div>
+                <a href="/Home/Index" class="w3-button w3-dark-grey">Go to Home Page</a>
 
+                <style>
+                    .w3-button-right {
+                        float: right;
+                    }
+                </style>
+
+                <a href="/Home/Index" class="w3-button w3-dark-grey w3-button-right">Pay</a>
 
 
             </form>
-
         </div>
     </div>
 </header>

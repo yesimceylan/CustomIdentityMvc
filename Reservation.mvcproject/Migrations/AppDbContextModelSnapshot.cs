@@ -235,6 +235,9 @@ namespace Reservation.mvcproject.Migrations
                     b.Property<Guid>("HotelId")
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<bool>("paymentStatus")
+                        .HasColumnType("bit");
+
                     b.Property<decimal?>("priceToPay")
                         .HasColumnType("decimal(18,2)");
 

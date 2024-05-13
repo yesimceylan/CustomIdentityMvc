@@ -19,5 +19,6 @@ namespace Reservation.mvcproject.Entities
         public Hotel Hotel { get; set; }
         public string? rezNumber { get; set; }
         public decimal? priceToPay { get; set; }
+        public bool paymentStatus { get; set; } = false;
     }
 }

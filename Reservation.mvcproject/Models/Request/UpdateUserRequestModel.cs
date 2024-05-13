@@ -6,11 +6,11 @@ namespace Reservation.mvcproject.Models.Request
 {
     public class UpdateUserRequestModel
     {
-        [Required]
+        public Guid Id { get; set; }
+
         [Column(TypeName="NVARCHAR(100)")]
         public string? Name { get; set; }
         
-        [Required]
         [Column(TypeName = "NVARCHAR(256)")]
         public string? Email { get; set; }
 

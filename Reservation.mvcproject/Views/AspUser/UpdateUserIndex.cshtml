@@ -11,6 +11,12 @@
         <div class="card-body">
             <form asp-action="UpdateUser" asp-controller="AspUser" method="post">
                 <div class="row">
+                    <div class="form-group">
+                        <label asp-for="Id"></label>
+                        <input asp-for="Id" readonly value="@ViewBag.userId" class="form-control" />
+                        <span class="text-danger">@Html.ValidationMessageFor(m => m.Id)</span>
+                    </div>
+                <div class="row">
                     <div class="col-sm-6">
                         <label asp-for="Name"></label>
                         <input asp-for="Name" class="form-control" />
@@ -18,7 +24,7 @@
                     </div>
                     <div class="col-sm-6">
                         <label asp-for="Email"></label>
-                        <input asp-for="Email"  required class="form-control" />
+                        <input asp-for="Email"  class="form-control" />
                         <span class="text-danger">@Html.ValidationMessageFor(m => m.Email)</span>
                     </div>
                 </div>

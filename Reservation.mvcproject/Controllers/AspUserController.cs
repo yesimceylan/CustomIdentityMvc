@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
 using Reservation.mvcproject.Data;
+using Reservation.mvcproject.Entities;
 using Reservation.mvcproject.Models.Request;
 using Reservation.mvcproject.ViewModels;
 using Serilog;
@@ -28,8 +29,9 @@ namespace Reservation.mvcproject.Controllers
         {
             return View();
         }
-        public IActionResult UpdateUserIndex()
+        public IActionResult UpdateUserIndex(Guid Id)
         {
+            ViewBag.userId = Id;
             return View();
         }
         [HttpPost]
@@ -72,7 +74,8 @@ namespace Reservation.mvcproject.Controllers
         [HttpPost]
         public async Task<IActionResult> UpdateUser(UpdateUserRequestModel user)
         {
-            var updatedUser = await _dbContext.Users.FirstOrDefaultAsync(u => u.Email == user.Email);
+            var userId = user?.Id.ToString();
+            var updatedUser = await _dbContext.Users.FindAsync(userId);
             if (updatedUser == null)
             {
                 return NotFound();
