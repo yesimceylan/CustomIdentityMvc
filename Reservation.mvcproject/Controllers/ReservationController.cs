@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.CodeAnalysis.Elfie.Serialization;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
+using System.Security.Cryptography;
 
 namespace Reservation.mvcproject.Controllers
 {
@@ -40,6 +41,11 @@ namespace Reservation.mvcproject.Controllers
         public IActionResult GetDetailIndex()
         {
             return View();
+        }
+        public async Task<IActionResult> PaymentIndex(Guid Id)
+        {
+            var res = await _dbContext.Reservations.FindAsync(Id);
+            return View(res);
         }
 
         public async Task<IActionResult> CreateReservation(CreateReservationRequest res)
@@ -139,6 +145,19 @@ namespace Reservation.mvcproject.Controllers
         {
             var res = await _dbContext.Reservations.FindAsync(rezNumber);
 
+            return View("GetDetailIndex", res);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Payment(Guid Id)
+        {
+            var res = await _dbContext.Reservations.FindAsync(Id);
+            if (res == null)
+            {
+                return NotFound();
+            }
+
+            res.paymentStatus = true;
+            await _dbContext.SaveChangesAsync();
             return View("GetDetailIndex", res);
         }
     }

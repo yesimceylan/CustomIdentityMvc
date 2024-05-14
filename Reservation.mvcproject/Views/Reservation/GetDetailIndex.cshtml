@@ -58,10 +58,19 @@
                         <label><i class="fa fa-child"></i> Kids: @Model.rezChild</label>
                     </div>
                 </div>
-
-                <div class="w3-row-padding" style="margin:0 -10px;">
-                    <label><i class="fa fa-money"></i> Price: @Model.priceToPay$</label>
-                </div>
+                
+                @if (Model.paymentStatus ==false)
+                {
+                    <div class="w3-row-padding" style="margin:0 -10px;">
+                        <label><i class="fa fa-money"></i> Price: @Model.priceToPay$ (Unpaid)</label>
+                    </div>
+                }
+                else
+                {
+                    <div class="w3-row-padding" style="margin:0 -10px;">
+                        <label><i class="fa fa-money"></i> Price: @Model.priceToPay$ (Paid Out)</label>
+                    </div>
+                }
 
                 <br />
                 <div class="w3-row-padding" style="margin:0 100px;color:grey">
@@ -101,13 +110,21 @@
 
                 <a href="/Home/Index" class="w3-button w3-dark-grey">Go to Home Page</a>
 
-                <style>
-                    .w3-button-right {
-                        float: right; 
-                    }
-                </style>
+                @if(Model.paymentStatus==false)
+                {
+                    <style>
+                        .w3-button-right {
+                            float: right;
+                        }
+                    </style>
 
-                <a href="/Home/Index" class="w3-button w3-dark-grey w3-button-right">Pay</a>
+                   @*  <a href="/Reservation/PaymentIndex" class="w3-button w3-dark-grey w3-button-right">Pay</a> *@
+                    <a href="/Reservation/PaymentIndex?id=@Model.Id" class="w3-button w3-dark-grey w3-button-right">Pay</a>
+
+
+                    <br />
+                }
+
 
             </form>
         </div>

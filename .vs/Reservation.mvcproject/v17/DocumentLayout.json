@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\yesim\\source\\repos\\test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6DF08456-5429-423D-890F-32F1F1C74525}|Reservation.mvcproject\\Reservation.mvcproject.csproj|c:\\users\\yesim\\source\\repos\\test\\reservation.mvcproject\\entities\\res.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DF08456-5429-423D-890F-32F1F1C74525}|Reservation.mvcproject\\Reservation.mvcproject.csproj|solutionrelative:reservation.mvcproject\\entities\\res.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DF08456-5429-423D-890F-32F1F1C74525}|Reservation.mvcproject\\Reservation.mvcproject.csproj|c:\\users\\yesim\\source\\repos\\test\\reservation.mvcproject\\views\\reservation\\reservationdetailindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6DF08456-5429-423D-890F-32F1F1C74525}|Reservation.mvcproject\\Reservation.mvcproject.csproj|solutionrelative:reservation.mvcproject\\views\\reservation\\reservationdetailindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DF08456-5429-423D-890F-32F1F1C74525}|Reservation.mvcproject\\Reservation.mvcproject.csproj|c:\\users\\yesim\\source\\repos\\test\\reservation.mvcproject\\entities\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DF08456-5429-423D-890F-32F1F1C74525}|Reservation.mvcproject\\Reservation.mvcproject.csproj|solutionrelative:reservation.mvcproject\\entities\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DF08456-5429-423D-890F-32F1F1C74525}|Reservation.mvcproject\\Reservation.mvcproject.csproj|c:\\users\\yesim\\source\\repos\\test\\reservation.mvcproject\\views\\reservation\\getdetailindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6DF08456-5429-423D-890F-32F1F1C74525}|Reservation.mvcproject\\Reservation.mvcproject.csproj|solutionrelative:reservation.mvcproject\\views\\reservation\\getdetailindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6DF08456-5429-423D-890F-32F1F1C74525}|Reservation.mvcproject\\Reservation.mvcproject.csproj|c:\\users\\yesim\\source\\repos\\test\\reservation.mvcproject\\views\\reservation\\paymentindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6DF08456-5429-423D-890F-32F1F1C74525}|Reservation.mvcproject\\Reservation.mvcproject.csproj|solutionrelative:reservation.mvcproject\\views\\reservation\\paymentindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Hotel.cs",
-              "DocumentMoniker": "C:\\Users\\yesim\\source\\repos\\test\\Reservation.mvcproject\\Entities\\Hotel.cs",
-              "RelativeDocumentMoniker": "Reservation.mvcproject\\Entities\\Hotel.cs",
-              "ToolTip": "C:\\Users\\yesim\\source\\repos\\test\\Reservation.mvcproject\\Entities\\Hotel.cs",
-              "RelativeToolTip": "Reservation.mvcproject\\Entities\\Hotel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T11:56:27.477Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Res.cs",
-              "DocumentMoniker": "C:\\Users\\yesim\\source\\repos\\test\\Reservation.mvcproject\\Entities\\Res.cs",
-              "RelativeDocumentMoniker": "Reservation.mvcproject\\Entities\\Res.cs",
-              "ToolTip": "C:\\Users\\yesim\\source\\repos\\test\\Reservation.mvcproject\\Entities\\Res.cs",
-              "RelativeToolTip": "Reservation.mvcproject\\Entities\\Res.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T11:55:25.536Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ReservationDetailIndex.cshtml",
-              "DocumentMoniker": "C:\\Users\\yesim\\source\\repos\\test\\Reservation.mvcproject\\Views\\Reservation\\ReservationDetailIndex.cshtml",
-              "RelativeDocumentMoniker": "Reservation.mvcproject\\Views\\Reservation\\ReservationDetailIndex.cshtml",
-              "ToolTip": "C:\\Users\\yesim\\source\\repos\\test\\Reservation.mvcproject\\Views\\Reservation\\ReservationDetailIndex.cshtml",
-              "RelativeToolTip": "Reservation.mvcproject\\Views\\Reservation\\ReservationDetailIndex.cshtml",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAADcAAAAaAAAA",
+              "Title": "PaymentIndex.cshtml",
+              "DocumentMoniker": "C:\\Users\\yesim\\source\\repos\\test\\Reservation.mvcproject\\Views\\Reservation\\PaymentIndex.cshtml",
+              "RelativeDocumentMoniker": "Reservation.mvcproject\\Views\\Reservation\\PaymentIndex.cshtml",
+              "ToolTip": "C:\\Users\\yesim\\source\\repos\\test\\Reservation.mvcproject\\Views\\Reservation\\PaymentIndex.cshtml*",
+              "RelativeToolTip": "Reservation.mvcproject\\Views\\Reservation\\PaymentIndex.cshtml*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-13T11:49:38.511Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GetDetailIndex.cshtml",
-              "DocumentMoniker": "C:\\Users\\yesim\\source\\repos\\test\\Reservation.mvcproject\\Views\\Reservation\\GetDetailIndex.cshtml",
-              "RelativeDocumentMoniker": "Reservation.mvcproject\\Views\\Reservation\\GetDetailIndex.cshtml",
-              "ToolTip": "C:\\Users\\yesim\\source\\repos\\test\\Reservation.mvcproject\\Views\\Reservation\\GetDetailIndex.cshtml",
-              "RelativeToolTip": "Reservation.mvcproject\\Views\\Reservation\\GetDetailIndex.cshtml",
-              "ViewState": "AQIAADMAAAAAAAAAAAAIwD8AAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-13T11:29:47.141Z",
+              "WhenOpened": "2024-05-13T13:11:42.589Z",
               "EditorCaption": ""
             }
           ]
