@@ -25,7 +25,7 @@ namespace Reservation.mvcproject.ViewModels
         [Display(Name ="Confirm PhoneNumber")]
         public string? PhoneNumberConfirmed { get; set; }
         
-        [Display(Name = "Gender (F/M)")]
+        [Display(Name = "Gender (M/F)")]
         public string? Gender { get; set; }
     }
 }

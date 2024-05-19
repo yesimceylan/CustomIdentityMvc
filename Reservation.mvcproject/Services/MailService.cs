@@ -20,7 +20,7 @@ namespace Reservation.mvcproject.Services
             newmail.To.Add(toMail);
             newmail.Subject = subject;
             newmail.Body = body;
-            newmail.From = new(selfmail, "Test", Encoding.UTF8);
+            newmail.From = new(selfmail, "Travel Nest", Encoding.UTF8);
 
             smptClient.Credentials = new NetworkCredential(selfmail, "pjgd moin bqnl bvkb");
             smptClient.EnableSsl = true;

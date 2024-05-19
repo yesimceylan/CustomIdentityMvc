@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Reservation.mvcproject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f0cb2d54336c9f9d0beee4b4bdca0aac11c43ad6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a40e1da90ae0a1270c94cdefc9d280758879104d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Reservation.mvcproject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Reservation.mvcproject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

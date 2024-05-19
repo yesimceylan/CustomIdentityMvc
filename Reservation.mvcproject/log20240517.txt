@@ -1,0 +1,9 @@
+2024-05-17 14:39:09.845 +03:00 [INF] Hotels listed.
+2024-05-17 14:39:15.353 +03:00 [INF] Aleyna Ergül user deleted.
+2024-05-17 14:39:15.362 +03:00 [INF] Hotels listed.
+2024-05-17 14:42:09.739 +03:00 [INF] Hotels listed.
+2024-05-17 14:42:15.861 +03:00 [INF] Yeşim Ceylan user deleted.
+2024-05-17 14:42:15.871 +03:00 [INF] Hotels listed.
+2024-05-17 17:10:59.782 +03:00 [INF] Hotels listed.
+2024-05-17 17:11:03.325 +03:00 [INF] Yeşim Ceylan user deleted.
+2024-05-17 17:11:03.342 +03:00 [INF] Hotels listed.

@@ -1,0 +1,6 @@
+2024-05-16 15:34:15.103 +03:00 [INF] Hotels listed.
+2024-05-16 15:34:19.600 +03:00 [INF] Yeşim Ceylan user deleted.
+2024-05-16 15:34:19.614 +03:00 [INF] Hotels listed.
+2024-05-16 17:03:12.508 +03:00 [INF] Hotels listed.
+2024-05-16 17:03:14.606 +03:00 [INF] Yeşim Ceylan user deleted.
+2024-05-16 17:03:14.623 +03:00 [INF] Hotels listed.

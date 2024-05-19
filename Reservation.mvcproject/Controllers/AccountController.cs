@@ -26,20 +26,77 @@ namespace Reservation.mvcproject.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginVM model)
         {
-            
-            if (ModelState.IsValid)
+            if (model.VerificationCode == null)
             {
-                //login
-                var result = await signInManager.PasswordSignInAsync(model.Username!, model.Password!, model.RememberMe, false);
-                if (result.Succeeded)
+                if (ModelState.IsValid)
                 {
-                    return RedirectToAction("Index", "Home");
+                    var result = await signInManager.PasswordSignInAsync(model.Username!, model.Password!, model.RememberMe, false);
+                    if (result.Succeeded)
+                    {
+                        // Random kodu burada oluştur
+                        Random rnd = new();
+                        var AuthenticationCode = rnd.Next(100000, 1000000);
+
+                        // AuthenticationCode'u ve email'i TempData'da sakla
+                        TempData["AuthenticationCode"] = AuthenticationCode;
+                        TempData["Username"] = model.Username;
+
+                        string? toMail = model.Username;
+                        string subject = "Two Factor Code";
+                        string body = $"Authentication Code : {AuthenticationCode}";
+                        await _mailService.SendEmailAsync(toMail, subject, body);
+
+                        // Doğrulama kodu girişi için bir görünüm gösterebilirsiniz
+                        return View(model);
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("", "Invalid login attempt");
+                    }
                 }
-                ModelState.AddModelError("", "Invalid login attempt");
-                return View();
+            }
+            else
+            {
+                if (ModelState.IsValid)
+                {
+                    // TempData'dan AuthenticationCode'u ve Username'i al
+                    var storedCode = TempData["AuthenticationCode"] as int?;
+                    var storedUsername = TempData["Username"] as string;
+
+                    if (storedCode.HasValue && storedUsername == model.Username)
+                    {
+                        bool IsVerify = IsVerifyUser(model.Username, model.VerificationCode, storedCode.Value);
+                        if (IsVerify)
+                        {
+                            var result = await signInManager.PasswordSignInAsync(model.Username!, model.Password!, model.RememberMe, false);
+                            if (result.Succeeded)
+                            {
+                                return RedirectToAction("Index", "Home");
+                            }
+                        }
+                        ModelState.AddModelError("", "Invalid login attempt");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("", "Invalid verification code or email");
+                    }
+                }
             }
             return View(model);
         }
+
+
+
+        public static bool IsVerifyUser(string? email, string? code, int? firstGenerateTwoFactorCode)
+        {
+            if (!int.TryParse(code, out var code1))
+            {
+                return false;
+            }
+
+            return firstGenerateTwoFactorCode == code1;
+        }
+
 
         public IActionResult Register()
         {

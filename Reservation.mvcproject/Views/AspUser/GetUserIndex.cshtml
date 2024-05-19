@@ -63,7 +63,7 @@
                                 xhr.onreadystatechange = function () {
                                     if (xhr.readyState === 4 && xhr.status === 200) {
                                         // Başarılı bir şekilde silindiğinde yapılacaklar
-                                        window.location.href = "/AspUser/GetUserIndex";
+                                        window.location.href = "/Account/Login";
                                     }
                                 };
                                 xhr.send("UserName=" + UserName);

@@ -5,7 +5,17 @@
     ViewData["Title"] = "Login";
     Layout = "_LoginLayout";
 }
+<style>
+    h6 {
+        color: brown;
+    }
 
+    #additionalInput {
+        width: 100px;
+        height: 40px;
+        border: 2px solid black;
+    }
+</style>
 <div class="row d-flex align-items-center justify-content-center">
     <div class="col-md-3 card p-3">
         <h2 class="text-center text-info">Login</h2>
@@ -34,9 +44,43 @@
                     <input type="submit" value="Login" class="btn btn-primary btn-sm float-end" />
                 </div>
             </div>
+            <!-- Doğrulama kodu alanı -->
+            <div>
+                <label for="verificationCode">Verification Code:</label>
+                <input asp-for="VerificationCode" type="text" id="verificationCode" name="VerificationCode">
+            </div>
         </form>
+        
     </div>
 </div>
+@* <script>
+    // Doğrulama kodunu kontrol etmek için JavaScript
+    document.getElementById("loginForm").onsubmit = function () {
+        // Kodu aldığımız alan
+        var code = document.getElementById("verificationCode").value;
+
+        // Girilen kodu kontrol etmek için Controller a gönder
+        fetch("/Account/VerifyCode?code=" + code, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ code: code })
+        })
+            .then(response => {
+                if (response.ok) {
+                    window.location.href = "/Home/Index"; // Doğrulama başarılıysa ana sayfaya yönlendir
+                } else {
+                    alert("Doğrulama başarısız. Lütfen tekrar deneyin."); // Doğrulama başarısızsa hata mesajı göster
+                }
+            })
+            .catch(error => {
+                console.error("Error:", error);
+            });
+
+        return false; // Formun submit işlemini engelle
+    };
+</script> *@
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
