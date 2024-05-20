@@ -19,8 +19,8 @@
 <div class="row d-flex align-items-center justify-content-center">
     <div class="col-md-3 card p-3">
         <h2 class="text-center text-info">Login</h2>
-        <form asp-action="Login" method="post" asp-route-returnurl="@ViewData["ReturnUrl"]">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <form id="loginForm" asp-action="Login" method="post" asp-route-returnurl="@ViewData["ReturnUrl"]">
+            <div id="validationSummary" class="text-danger"></div> <!-- Hata mesajlarını göstereceğimiz alan -->
             <div class="mb-1">
                 <label asp-for="Username" class="control-label"></label>
                 <input asp-for="Username" class="form-control" />
@@ -36,52 +36,64 @@
                     <input asp-for="RememberMe" class="form-check-input" /> @Html.DisplayNameFor(a => a.RememberMe)
                 </label>
             </div>
+            <div id="verificationCodeSection" class="mb-1" style="display: none;">
+                <label for="verificationCode">Verification Code:</label>
+                <input asp-for="VerificationCode" type="text" maxlength="6" id="verificationCode" name="VerificationCode" class="form-control">
+                <span asp-validation-for="VerificationCode" class="text-danger"></span>
+            </div>
             <div class="row">
                 <div class="col-8">
                     <a asp-action="Register" class="text-decoration-none float-start mt-2" asp-route-returnurl="@ViewData["ReturnUrl"]">Don't have account?</a>
                 </div>
                 <div class="col-4">
-                    <input type="submit" value="Login" class="btn btn-primary btn-sm float-end" />
+                    <button type="submit" id="loginButton" class="btn btn-primary btn-sm float-end">Login</button>
                 </div>
             </div>
-            <!-- Doğrulama kodu alanı -->
-            <div>
-                <label for="verificationCode">Verification Code:</label>
-                <input asp-for="VerificationCode" type="text" id="verificationCode" name="VerificationCode">
-            </div>
         </form>
-        
     </div>
 </div>
-@* <script>
-    // Doğrulama kodunu kontrol etmek için JavaScript
-    document.getElementById("loginForm").onsubmit = function () {
-        // Kodu aldığımız alan
-        var code = document.getElementById("verificationCode").value;
 
-        // Girilen kodu kontrol etmek için Controller a gönder
-        fetch("/Account/VerifyCode?code=" + code, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({ code: code })
-        })
-            .then(response => {
-                if (response.ok) {
-                    window.location.href = "/Home/Index"; // Doğrulama başarılıysa ana sayfaya yönlendir
-                } else {
-                    alert("Doğrulama başarısız. Lütfen tekrar deneyin."); // Doğrulama başarısızsa hata mesajı göster
-                }
-            })
-            .catch(error => {
-                console.error("Error:", error);
-            });
-
-        return false; // Formun submit işlemini engelle
-    };
-</script> *@
 @section Scripts {
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#loginForm").submit(function (event) {
+                event.preventDefault(); // Formun varsayılan submit işlemini engelle
+
+                var formData = $(this).serialize(); // Form verilerini serileştir
+
+                $.ajax({
+                    type: "POST",
+                    url: $(this).attr("action"),
+                    data: formData,
+                    success: function (response) {
+                        $("#validationSummary").empty(); // Önceki hata mesajlarını temizle
+                        if (response.showVerificationCode) {
+                            $("#verificationCodeSection").show(); // Verification kodu alanını göster
+                            $("#loginButton").val("Verify");
+                        } else if (response.redirectUrl) {
+                            window.location.href = response.redirectUrl; // Başarılı girişte yönlendirme
+                        } else {
+                            // Hata mesajlarını göster
+                            if (response.errors) {
+                                for (var key in response.errors) {
+                                    if (response.errors.hasOwnProperty(key)) {
+                                        var errorElement = $("span[data-valmsg-for='" + key + "']");
+                                        errorElement.text(response.errors[key].join(", "));
+                                    }
+                                }
+                            }
+                            if (response.generalErrors) {
+                                response.generalErrors.forEach(function (error) {
+                                    $("#validationSummary").append("<p>" + error + "</p>");
+                                });
+                            }
+                        }
+                    }
+                });
+            });
+        });
+    </script>
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }

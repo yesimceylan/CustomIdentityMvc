@@ -33,11 +33,9 @@ namespace Reservation.mvcproject.Controllers
                     var result = await signInManager.PasswordSignInAsync(model.Username!, model.Password!, model.RememberMe, false);
                     if (result.Succeeded)
                     {
-                        // Random kodu burada oluştur
                         Random rnd = new();
                         var AuthenticationCode = rnd.Next(100000, 1000000);
 
-                        // AuthenticationCode'u ve email'i TempData'da sakla
                         TempData["AuthenticationCode"] = AuthenticationCode;
                         TempData["Username"] = model.Username;
 
@@ -46,8 +44,7 @@ namespace Reservation.mvcproject.Controllers
                         string body = $"Authentication Code : {AuthenticationCode}";
                         await _mailService.SendEmailAsync(toMail, subject, body);
 
-                        // Doğrulama kodu girişi için bir görünüm gösterebilirsiniz
-                        return View(model);
+                        return Json(new { showVerificationCode = true });
                     }
                     else
                     {
@@ -59,7 +56,6 @@ namespace Reservation.mvcproject.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    // TempData'dan AuthenticationCode'u ve Username'i al
                     var storedCode = TempData["AuthenticationCode"] as int?;
                     var storedUsername = TempData["Username"] as string;
 
@@ -71,18 +67,26 @@ namespace Reservation.mvcproject.Controllers
                             var result = await signInManager.PasswordSignInAsync(model.Username!, model.Password!, model.RememberMe, false);
                             if (result.Succeeded)
                             {
-                                return RedirectToAction("Index", "Home");
+                                return Json(new { redirectUrl = Url.Action("Index", "Home") });
                             }
                         }
-                        ModelState.AddModelError("", "Invalid login attempt");
+                        ModelState.AddModelError("", "Invalid verification code or email, please refresh the page");
                     }
                     else
                     {
-                        ModelState.AddModelError("", "Invalid verification code or email");
+                        ModelState.AddModelError("", "Invalid verification code or email, please refresh the page");
                     }
                 }
             }
-            return View(model);
+
+            var errors = ModelState.ToDictionary(
+                kvp => kvp.Key,
+                kvp => kvp.Value.Errors.Select(e => e.ErrorMessage).ToArray()
+            );
+
+            var generalErrors = ModelState[""]?.Errors.Select(e => e.ErrorMessage).ToList();
+
+            return Json(new { errors, generalErrors });
         }
 
 
