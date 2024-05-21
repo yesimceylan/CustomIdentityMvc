@@ -21,7 +21,7 @@
                     <div class="w3-container">
                         <h4 class="w3-center text-wrap" style="font-weight: 300;"><b>@user.Name</b></h4>
                         <div class="row">
-                            <div class="col-md-5">
+                            <div class="col-md-5" style="margin:0 auto;">
                                 <p class="w3-center">
                                     @if (user.Gender == "female")
                                     {
@@ -33,7 +33,7 @@
                                     }
                                 </p>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-8" style="margin:0 auto;">
                                 <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> @user.Email</p>
                                 <p><i class="fa fa-phone fa-fw w3-margin-right w3-text-theme"></i> @user.PhoneNumber</p>
                                 <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> @user.Adress</p>
@@ -45,8 +45,6 @@
                         <a href="#" class="w3-button w3-dark-grey" onclick="confirmDelete('@user.UserName')">Delete</a>
 
                         <div class="col-sm-4 mb-4"></div>
-
-
                         <script>
                             function confirmDelete(UserName) {
                                 var confirmDelete = confirm("Are you sure you want to delete?");

@@ -65,8 +65,9 @@
             display: table;
             clear: both;
         }
-        h4{
-            color:mediumseagreen;
+
+        h4 {
+            color: mediumseagreen;
         }
     </style>
 </head>
@@ -104,12 +105,12 @@
                 </div>
             </div>
 
-                        <div class="row">
+            <div class="row">
                 <div class="col-25">
                     <label for="rezDate">Entry Date</label>
                 </div>
                 <div class="col-75">
-                    <input id="rezDate" asp-for="rezDate" required class="form-control" type="date" />
+                    <input id="rezDate" asp-for="rezDate" required class="form-control" type="date" min="@DateTime.Now.ToString("yyyy-MM-dd")" />
                 </div>
             </div>
 
@@ -118,7 +119,7 @@
                     <label for="rezEndDate">Release Date</label>
                 </div>
                 <div class="col-75">
-                    <input id="rezEndDate" asp-for="rezEndDate" required class="form-control" type="date" />
+                    <input id="rezEndDate" asp-for="rezEndDate" required class="form-control" type="date" min="@DateTime.Now.AddDays(1).ToString("yyyy-MM-dd")" />
                 </div>
             </div>
 
@@ -177,7 +178,7 @@
                             var rezEndDateVal = $('#rezEndDate').val();
 
 
-                            if (adults  && rezDateVal && rezEndDateVal) {
+                            if (adults && rezDateVal && rezEndDateVal) {
                                 var rezDate = new Date(rezDateVal);
                                 var rezEndDate = new Date(rezEndDateVal);
                                 var priceToPay = calculateTotalPrice(adults, children, rezDate, rezEndDate);
@@ -197,7 +198,7 @@
                             var difference = rezEndDate.getTime() - rezDate.getTime();
                             var daysDifference = Math.floor(difference / (1000 * 60 * 60 * 24));
 
-                            priceToPay = (adults * adultPrice) + (children * childPrice) ;
+                            priceToPay = (adults * adultPrice) + (children * childPrice);
                             priceToPay *= daysDifference;
 
                             return priceToPay;
