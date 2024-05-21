@@ -18,6 +18,7 @@ namespace Reservation.mvcproject.ViewModels
         public string? ConfirmPassword { get; set; }
 
         //multiline adress icin bir kac satır ayırır
+        [Required]
         [DataType(DataType.MultilineText)]
         public string? Adress { get; set; }
         public string? PhoneNumber { get; set; }

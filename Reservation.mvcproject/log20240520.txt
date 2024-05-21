@@ -80,3 +80,4 @@
 2024-05-20 18:11:14.832 +03:00 [INF] Hotels listed.
 2024-05-20 18:11:27.412 +03:00 [INF] f957209a-c2c9-4d10-55ea-08dc78ddf424 new reservation registration.
 2024-05-20 18:11:27.412 +03:00 [INF] RV598629 / added new reservation.
+2024-05-20 18:18:45.520 +03:00 [INF] Hotels listed.
