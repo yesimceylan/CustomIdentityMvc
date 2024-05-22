@@ -84,18 +84,26 @@
 
                                 </li>
 
-                                <li>
+                                @{
+                                    var currentUserEmail = "yesimceylan7@icloud.com";
+                                }
 
-                                    <a class="dropdown-item" asp-area="" asp-controller="Hotel" asp-action="GetHotelByIdIndex">Get Hotel</a>
+                                @if (User.Identity.Name == currentUserEmail)
+                                {
 
-                                </li>
+                                    <li>
 
+                                        <a class="dropdown-item" asp-area="" asp-controller="Hotel" asp-action="GetHotelByIdIndex">Get Hotel</a>
 
-                                <li>
+                                    </li>
 
-                                    <a class="dropdown-item" asp-area="" asp-controller="Hotel" asp-action="CreateHotelIndex">Create Hotel</a>
+                                    <li>
 
-                                </li>
+                                        <a class="dropdown-item" asp-area="" asp-controller="Hotel" asp-action="CreateHotelIndex">Create Hotel</a>
+
+                                    </li>
+                                }
+
 
                             </ul>
                         </li>

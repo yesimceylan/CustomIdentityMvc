@@ -69,10 +69,17 @@
                     </div>
                     <br />
 
-                    @* <a href="/Hotel/UpdateHotelIndex" class="w3-button w3-dark-grey">Update</a>*@
-                    <a href="@Url.Action("UpdateHotelIndex", "Hotel", new { id = hotels.Id })" class="w3-button w3-dark-grey">Update</a>
+                    @{
+                        var currentUserEmail = "yesimceylan7@icloud.com";
+                    }
 
-                    <a href="#" class="w3-button w3-dark-grey" onclick="confirmDelete('@hotels.Id')">Delete</a>
+                    @if (User.Identity.Name == currentUserEmail)
+                    {
+                        <a href="@Url.Action("UpdateHotelIndex", "Hotel", new { id = hotels.Id })" class="w3-button w3-dark-grey">Update</a>
+
+                        <a href="#" class="w3-button w3-dark-grey" onclick="confirmDelete('@hotels.Id')">Delete</a>
+                    }
+
 
                     <script>
                         function confirmDelete(Id) {

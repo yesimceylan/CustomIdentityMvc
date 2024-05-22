@@ -40,9 +40,15 @@
                             </div>
                         </div>
 
-                        <a href="/AspUser/UpdateUserIndex?Id=@user.Id" class="w3-button w3-dark-grey">Update</a>
+                        @{
+                            var currentUserEmail = "yesimceylan7@icloud.com"; 
+                        }
 
-                        <a href="#" class="w3-button w3-dark-grey" onclick="confirmDelete('@user.UserName')">Delete</a>
+                        @if (User.Identity.Name == currentUserEmail)
+                        {
+                            <a href="/AspUser/UpdateUserIndex?Id=@user.Id" class="w3-button w3-dark-grey">Update</a>
+                            <a href="#" class="w3-button w3-dark-grey" onclick="confirmDelete('@user.UserName')">Delete</a>
+                        }
 
                         <div class="col-sm-4 mb-4"></div>
                         <script>
