@@ -48,6 +48,20 @@ namespace Reservation.mvcproject.Controllers
             return View(res);
         }
 
+        public IActionResult ReservationsIndex()
+        {
+            //var reservations = _dbContext.Reservations.ToList();
+            return View();
+        }
+        public IActionResult ReservationFilterIndex()
+        {
+            return View();
+        }
+        public IActionResult ReservationFilteredIndex()
+        {
+            return View();
+        }
+
         public async Task<IActionResult> CreateReservation(CreateReservationRequest res)
         {
             var defaultBookingNumberPrefix = "RV";
@@ -159,6 +173,27 @@ namespace Reservation.mvcproject.Controllers
             res.paymentStatus = true;
             await _dbContext.SaveChangesAsync();
             return View("GetDetailIndex", res);
+        }
+        [HttpPost]
+        public async Task<IActionResult> ReservationFilter(ReservationFilterModel model)
+        {
+
+            var reservations = _dbContext.Reservations
+                .Where(r => r.rezDate >= model.rezDate && r.rezDate <= model.rezEndDate ||
+                            r.rezEndDate >= model.rezDate && r.rezEndDate <= model.rezEndDate ||
+                            r.rezDate <= model.rezDate && r.rezEndDate >= model.rezEndDate);
+
+            var filteredReservations = await reservations.ToListAsync();
+            if (filteredReservations.Count == 0)
+            {
+                TempData["NoRes"] = "Reservation not found.";
+                return View("ReservationFilterIndex");
+            }
+            else
+            {
+                ViewBag.Reservations = filteredReservations;
+                return View("ReservationFilteredIndex");
+            }
         }
     }
 }

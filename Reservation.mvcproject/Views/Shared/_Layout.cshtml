@@ -107,19 +107,42 @@
 
                             </ul>
                         </li>
+             @*            A *@
 
-                        <li class="nav-item">
+                        <li class="nav-item dropdown">
 
-                            <a class="nav-link text-black" asp-area="" asp-controller="Hotel" asp-action="SearchHotelIndex">Find Hotel</a>
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
 
+                                Booking!
+
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                <li class="nav-item">
+
+                                    <a class="nav-link text-black" asp-area="" asp-controller="Hotel" asp-action="SearchHotelIndex">Make Booking</a>
+
+                                </li>
+
+                                <li class="nav-item">
+
+                                    <a class="nav-link text-black" asp-area="" asp-controller="Reservation" asp-action="GetReservationIndex">Search Booking </a>
+
+                                </li>
+
+                                @if (User.Identity.Name == currentUserEmail)
+                                {
+                                    <li class="nav-item">
+
+                                        <a class="nav-link text-black" asp-area="" asp-controller="Reservation" asp-action="ReservationFilterIndex">Booking Monitor </a>
+
+                                    </li>
+                                }
+
+                            </ul>
                         </li>
-
-                        <li class="nav-item">
-
-                            <a class="nav-link text-black" asp-area="" asp-controller="Reservation" asp-action="GetReservationIndex">Find Reservation</a>
-
-                        </li>
-
 
                     </ul>
                     <ul class="navbar-nav">
