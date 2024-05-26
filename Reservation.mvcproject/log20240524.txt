@@ -23,3 +23,71 @@
 2024-05-24 10:33:55.581 +03:00 [INF] Hotels listed.
 2024-05-24 10:33:57.587 +03:00 [INF] Hotels listed.
 2024-05-24 10:35:03.991 +03:00 [INF] Hotels listed.
+2024-05-24 13:30:24.272 +03:00 [INF] 7cb6909e-52a8-4f23-eb09-08dc7bdc8562 new reservation registration.
+2024-05-24 13:30:24.309 +03:00 [INF] RV141451 / added new reservation.
+2024-05-24 13:31:20.854 +03:00 [INF] Reservation Number: RV141451 to be viewed.
+2024-05-24 14:21:15.847 +03:00 [INF] Hotels listed.
+2024-05-24 14:21:22.557 +03:00 [INF] Hotels listed.
+2024-05-24 14:21:27.184 +03:00 [INF] Mustafa Batı user deleted.
+2024-05-24 14:21:27.193 +03:00 [INF] Hotels listed.
+2024-05-24 14:21:27.206 +03:00 [INF] Hotels listed.
+2024-05-24 14:21:30.407 +03:00 [INF] Hotels listed.
+2024-05-24 14:21:38.164 +03:00 [INF] yesimceylan7@icloud.com user updated.
+2024-05-24 14:21:38.175 +03:00 [INF] Hotels listed.
+2024-05-24 14:21:41.693 +03:00 [INF] Hotels listed.
+2024-05-24 14:21:53.085 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-24 14:21:53.096 +03:00 [INF] Hotels listed.
+2024-05-24 14:21:57.020 +03:00 [INF] Hotels listed.
+2024-05-24 15:37:13.266 +03:00 [INF] Hotels listed.
+2024-05-24 15:37:56.576 +03:00 [INF] Hotels listed.
+2024-05-24 15:38:44.485 +03:00 [INF] 7d6e5279-d8ef-4978-4a98-08dc7bee7313 new reservation registration.
+2024-05-24 15:38:44.486 +03:00 [INF] RV580205 / added new reservation.
+2024-05-24 15:38:49.481 +03:00 [INF] Hotels listed.
+2024-05-24 15:42:34.709 +03:00 [INF] 81d9cfab-44af-4412-4a99-08dc7bee7313 new reservation registration.
+2024-05-24 15:42:34.711 +03:00 [INF] RV340335 / added new reservation.
+2024-05-24 15:43:23.524 +03:00 [INF] Hotels listed.
+2024-05-24 15:44:11.455 +03:00 [INF] 62bbce10-9015-4025-4a9a-08dc7bee7313 new reservation registration.
+2024-05-24 15:44:11.456 +03:00 [INF] RV335455 / added new reservation.
+2024-05-24 15:44:50.414 +03:00 [INF] Hotels listed.
+2024-05-24 15:45:40.323 +03:00 [INF] 91f3225d-58da-4757-4a9b-08dc7bee7313 new reservation registration.
+2024-05-24 15:45:40.325 +03:00 [INF] RV402189 / added new reservation.
+2024-05-24 15:45:47.472 +03:00 [INF] Hotels listed.
+2024-05-24 15:46:29.774 +03:00 [INF] 5d68bb58-f37a-42b1-4a9c-08dc7bee7313 new reservation registration.
+2024-05-24 15:46:29.776 +03:00 [INF] RV495538 / added new reservation.
+2024-05-24 15:46:51.507 +03:00 [INF] Hotels listed.
+2024-05-24 15:47:27.840 +03:00 [INF] 90894352-3f24-4c1e-4a9d-08dc7bee7313 new reservation registration.
+2024-05-24 15:47:27.841 +03:00 [INF] RV890734 / added new reservation.
+2024-05-24 15:48:26.198 +03:00 [INF] Hotels listed.
+2024-05-24 15:49:15.246 +03:00 [INF] Hotels listed.
+2024-05-24 15:49:19.557 +03:00 [INF] yesimceylan7@icloud.com user updated.
+2024-05-24 15:49:19.572 +03:00 [INF] Hotels listed.
+2024-05-24 16:38:39.648 +03:00 [INF] Hotels listed.
+2024-05-24 16:40:36.627 +03:00 [INF] Hotels listed.
+2024-05-24 16:40:40.440 +03:00 [INF] Hotels listed.
+2024-05-24 16:40:43.749 +03:00 [INF] Hotels listed.
+2024-05-24 16:40:49.302 +03:00 [INF] Hotels listed.
+2024-05-24 16:42:15.968 +03:00 [INF] User with maill adress ferhan.abaci@santsg.com is listed.
+2024-05-24 16:42:21.443 +03:00 [INF] Hotels listed.
+2024-05-24 16:44:43.216 +03:00 [INF] Hotels listed.
+2024-05-24 16:46:27.584 +03:00 [INF] Hotels listed.
+2024-05-24 16:47:14.436 +03:00 [INF] Hotels listed.
+2024-05-24 16:48:15.286 +03:00 [INF] Hotels listed.
+2024-05-24 16:48:40.716 +03:00 [INF] Hotels listed.
+2024-05-24 17:20:44.835 +03:00 [INF] Hotels listed.
+2024-05-24 17:26:57.426 +03:00 [INF] Hotels listed.
+2024-05-24 17:27:56.000 +03:00 [INF] Hotels listed.
+2024-05-24 17:29:43.245 +03:00 [INF] ec2cdcba-5278-4156-e0b4-08dc7bfdf40a new reservation registration.
+2024-05-24 17:29:43.248 +03:00 [INF] RV573636 / added new reservation.
+2024-05-24 17:29:49.057 +03:00 [INF] Hotels listed.
+2024-05-24 17:29:52.899 +03:00 [INF] Hotels listed.
+2024-05-24 17:31:33.848 +03:00 [INF] c30e14b8-7cb3-4b99-e0b5-08dc7bfdf40a new reservation registration.
+2024-05-24 17:31:33.851 +03:00 [INF] RV811921 / added new reservation.
+2024-05-24 17:32:14.715 +03:00 [INF] Reservation Number: RV811921 to be viewed.
+2024-05-24 17:34:29.892 +03:00 [INF] Hotels listed.
+2024-05-24 17:34:48.297 +03:00 [INF] ferhan.abaci@santsg.com user updated.
+2024-05-24 17:34:48.315 +03:00 [INF] Hotels listed.
+2024-05-24 17:35:00.307 +03:00 [INF] User with maill adress ferhan.abaci@santsg.com is listed.
+2024-05-24 17:35:05.665 +03:00 [INF] Hotels listed.
+2024-05-24 17:35:15.970 +03:00 [INF] Reservation.mvcproject.Entities.Hotel user updated.
+2024-05-24 17:35:15.991 +03:00 [INF] Hotels listed.
+2024-05-24 17:40:23.378 +03:00 [INF] HotelId: 58a9d897-d590-4410-c322-08dc5d45816e to be viewed.

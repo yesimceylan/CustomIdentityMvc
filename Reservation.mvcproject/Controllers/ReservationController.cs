@@ -178,22 +178,29 @@ namespace Reservation.mvcproject.Controllers
         public async Task<IActionResult> ReservationFilter(ReservationFilterModel model)
         {
 
-            var reservations = _dbContext.Reservations
-                .Where(r => r.rezDate >= model.rezDate && r.rezDate <= model.rezEndDate ||
-                            r.rezEndDate >= model.rezDate && r.rezEndDate <= model.rezEndDate ||
-                            r.rezDate <= model.rezDate && r.rezEndDate >= model.rezEndDate);
+            var reservationsWithHotels = await _dbContext.Reservations
+    .Where(r => (r.rezDate >= model.rezDate && r.rezDate <= model.rezEndDate) ||
+                (r.rezEndDate >= model.rezDate && r.rezEndDate <= model.rezEndDate) ||
+                (r.rezDate <= model.rezDate && r.rezEndDate >= model.rezEndDate))
+    .Join(
+        _dbContext.Hotels,
+        reservation => reservation.HotelId,
+        hotel => hotel.Id,
+        (reservation, hotel) => new { Reservation = reservation, HotelName = hotel.HotelName }
+    )
+    .ToListAsync();
 
-            var filteredReservations = await reservations.ToListAsync();
-            if (filteredReservations.Count == 0)
+            if (reservationsWithHotels.Count == 0)
             {
                 TempData["NoRes"] = "Reservation not found.";
                 return View("ReservationFilterIndex");
             }
             else
             {
-                ViewBag.Reservations = filteredReservations;
+                ViewBag.Reservations = reservationsWithHotels;
                 return View("ReservationFilteredIndex");
             }
+
         }
     }
 }

@@ -26,15 +26,15 @@
         @foreach (var res in reservations)
         {
             <tr>
-                <td><strong>@res.rezNumber</strong></td>
-                <td>@res.rezName</td>
-                <td>@res.rezEmail</td>
-                <td>@res.rezPhoneNumber</td>
-                <td>@res.rezDate.ToString("dd/MM/yyyy")</td>
-                <td>@res.rezEndDate.ToString("dd/MM/yyyy")</td>
-                <td>@res.HotelId</td>
-                <td>@res.priceToPay$</td>
-                @if(@res.paymentStatus)
+                <td><strong>@res.Reservation.rezNumber</strong></td>
+                <td>@res.Reservation.rezName</td>
+                <td>@res.Reservation.rezEmail</td>
+                <td>@res.Reservation.rezPhoneNumber</td>
+                <td>@res.Reservation.rezDate.ToString("dd/MM/yyyy")</td>
+                <td>@res.Reservation.rezEndDate.ToString("dd/MM/yyyy")</td>
+                <td>@res.HotelName</td>
+                <td>@res.Reservation.priceToPay$</td>
+                @if (@res.Reservation.paymentStatus)
                 {
                     <td>Paid Out</td>
                 }

@@ -60,11 +60,18 @@
 
                                 </li>
 
-                                <li>
+                                @{
+                                    var currentUserEmail = "yesimceylan7@icloud.com";
+                                }
 
-                                    <a class="dropdown-item" asp-area="" asp-controller="AspUser" asp-action="GetUserByEmailIndex">Get User</a>
+                                @if (User.Identity.Name == currentUserEmail)
+                                {
+                                    <li>
 
-                                </li>
+                                        <a class="dropdown-item" asp-area="" asp-controller="AspUser" asp-action="GetUserByEmailIndex">Get User</a>
+
+                                    </li>
+                                }
 
                             </ul>
                         </li>
@@ -83,10 +90,6 @@
                                     <a class="dropdown-item" asp-area="" asp-controller="Hotel" asp-action="GetHotelIndex">List Hotels</a>
 
                                 </li>
-
-                                @{
-                                    var currentUserEmail = "yesimceylan7@icloud.com";
-                                }
 
                                 @if (User.Identity.Name == currentUserEmail)
                                 {
@@ -107,7 +110,7 @@
 
                             </ul>
                         </li>
-             @*            A *@
+                        @*            A *@
 
                         <li class="nav-item dropdown">
 

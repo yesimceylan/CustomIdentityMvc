@@ -35,14 +35,17 @@
                             </div>
                             <div class="col-md-8" style="margin:0 auto;">
                                 <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> @user.Email</p>
-                                <p><i class="fa fa-phone fa-fw w3-margin-right w3-text-theme"></i> @user.PhoneNumber</p>
+                                @{
+                                    var currentUserEmail = "yesimceylan7@icloud.com";
+                                }
+
+                                @if (User.Identity.Name == currentUserEmail)
+                                {
+                                    <p><i class="fa fa-phone fa-fw w3-margin-right w3-text-theme"></i> @user.PhoneNumber</p>
+                                }
                                 <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> @user.Adress</p>
                             </div>
                         </div>
-
-                        @{
-                            var currentUserEmail = "yesimceylan7@icloud.com"; 
-                        }
 
                         @if (User.Identity.Name == currentUserEmail)
                         {

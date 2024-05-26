@@ -48,7 +48,8 @@ namespace Reservation.mvcproject.Controllers
                 _dbContext.Users.Remove(userToDelete);
                 await _dbContext.SaveChangesAsync();
 
-                Log.Information($"{userToDelete.Name} user deleted.");
+                Log.Information($"{userToDelete.Name} " +
+                    $"user deleted.");
             }
             return RedirectToAction("GetUserIndex", "AspUser");
         }

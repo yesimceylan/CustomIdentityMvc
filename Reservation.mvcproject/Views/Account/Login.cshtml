@@ -20,7 +20,7 @@
     <div class="col-md-3 card p-3">
         <h2 class="text-center text-info">Login</h2>
         <form id="loginForm" asp-action="Login" method="post" asp-route-returnurl="@ViewData["ReturnUrl"]">
-            <div id="validationSummary" class="text-danger"></div> <!-- Hata mesajlarını göstereceğimiz alan -->
+            <div id="validationSummary" class="text-danger"></div> 
             <div class="mb-1">
                 <label asp-for="Username" class="control-label"></label>
                 <input asp-for="Username" class="form-control" />
@@ -36,11 +36,24 @@
                     <input asp-for="RememberMe" class="form-check-input" /> @Html.DisplayNameFor(a => a.RememberMe)
                 </label>
             </div>
-            <div id="verificationCodeSection" class="mb-1" style="display: none;">
-                <label for="verificationCode">Verification Code:</label>
-                <input asp-for="VerificationCode" type="text" maxlength="6" id="verificationCode" name="VerificationCode" class="form-control">
-                <span asp-validation-for="VerificationCode" class="text-danger"></span>
+
+            <br />
+
+            <div class="form-group row">
+                <div class="col">
+                    <div id="verificationCodeSection" class="mb-1" style="display: none;">
+                        <label for="verificationCode" style="font-weight: bold;">Verification Code:</label>
+                        <input asp-for="VerificationCode" type="text" maxlength="6" id="verificationCode" name="VerificationCode" class="form-control">
+                        <span asp-validation-for="VerificationCode" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="timerSection" style="display: none; font-weight: bold;">
+                        <p id="timerDisplay"></p>
+                    </div>
+                </div>
             </div>
+
             <div class="row">
                 <div class="col-8">
                     <a asp-action="Register" class="text-decoration-none float-start mt-2" asp-route-returnurl="@ViewData["ReturnUrl"]">Don't have account?</a>
@@ -58,23 +71,25 @@
     <script>
         $(document).ready(function () {
             $("#loginForm").submit(function (event) {
-                event.preventDefault(); // Formun varsayılan submit işlemini engelle
+                event.preventDefault();
 
-                var formData = $(this).serialize(); // Form verilerini serileştir
+                var formData = $(this).serialize();
 
                 $.ajax({
                     type: "POST",
                     url: $(this).attr("action"),
                     data: formData,
                     success: function (response) {
-                        $("#validationSummary").empty(); // Önceki hata mesajlarını temizle
+                        $("#validationSummary").empty();
                         if (response.showVerificationCode) {
-                            $("#verificationCodeSection").show(); // Verification kodu alanını göster
+                            $("#verificationCodeSection").show();
+                            $("#timerSection").show();
                             $("#loginButton").val("Verify");
+                            startTimer(120);
                         } else if (response.redirectUrl) {
-                            window.location.href = response.redirectUrl; // Başarılı girişte yönlendirme
+                            window.location.href = response.redirectUrl;
                         } else {
-                            // Hata mesajlarını göster
+
                             if (response.errors) {
                                 for (var key in response.errors) {
                                     if (response.errors.hasOwnProperty(key)) {
@@ -92,6 +107,24 @@
                     }
                 });
             });
+
+            function startTimer(duration) {
+                var timerDisplay = $("#timerDisplay");
+                var timer = duration, minutes, seconds;
+                setInterval(function () {
+                    minutes = parseInt(timer / 60, 10);
+                    seconds = parseInt(timer % 60, 10);
+
+                    minutes = minutes < 10 ? "0" + minutes : minutes;
+                    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                    timerDisplay.text(minutes + ":" + seconds);
+
+                    if (--timer < 0) {
+                        window.location.href = '@Url.Action("Login", "Account")';
+                    }
+                }, 1000);
+            }
         });
     </script>
     @{
